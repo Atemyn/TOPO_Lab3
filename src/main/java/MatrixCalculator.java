@@ -9,4 +9,9 @@ public class MatrixCalculator {
         // TODO Реализовать метод сложения матриц до конца.
         return new double[0][0];
     }
+
+    public double[][] multiply(double[][] matrix, double number) {
+        // TODO Реализовать метод умножения матрицы на число до конца.
+        return  new double[0][0];
+    }
 }
