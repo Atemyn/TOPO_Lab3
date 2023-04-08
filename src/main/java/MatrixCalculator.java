@@ -34,7 +34,12 @@ public class MatrixCalculator {
         return  new double[0][0];
     }
 
-    public double determinant(double[][] doubles) throws ZeroOrderMatrixException {
+    /**
+     * Метод для умножения двух матриц
+     * @param matrix первый аргумент, матрица, содержащая вещественные числа
+     * @return определитель первого аргумента
+     */
+    public double determinant(double[][] matrix) throws ZeroOrderMatrixException {
         throw new ZeroOrderMatrixException("Определитель матрицы" +
                 "нулевого порядка не может быть вычислен!");
     }
