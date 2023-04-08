@@ -7,4 +7,11 @@ public class MatrixCalculatorTest {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
         Assertions.assertNotNull(matrixCalculator);
     }
+
+    @Test
+    void addMatricesZeroOrderTest(){
+        MatrixCalculator matrixCalculator = new MatrixCalculator();
+        Assertions.assertArrayEquals(new double[0][0],
+                matrixCalculator.add(new double[0][0], new double[0][0]));
+    }
 }
