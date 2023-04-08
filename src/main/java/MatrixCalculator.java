@@ -20,4 +20,9 @@ public class MatrixCalculator {
         // TODO Реализовать метод умножения матрицы на число до конца.
         return  new double[0][0];
     }
+
+    public double[][] multiply(double[][] matrix1, double[][] matrix2) {
+        // TODO Реализовать метод умножения двух матриц до конца.
+        return  new double[0][0];
+    }
 }
