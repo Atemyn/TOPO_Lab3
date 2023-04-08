@@ -1,3 +1,5 @@
+import exceptions.ZeroOrderMatrixException;
+
 public class MatrixCalculator {
     /**
      * Метод для сложения двух матриц
@@ -30,5 +32,10 @@ public class MatrixCalculator {
     public double[][] multiply(double[][] matrix1, double[][] matrix2) {
         // TODO Реализовать метод умножения двух матриц до конца.
         return  new double[0][0];
+    }
+
+    public double determinant(double[][] doubles) throws ZeroOrderMatrixException {
+        throw new ZeroOrderMatrixException("Определитель матрицы" +
+                "нулевого порядка не может быть вычислен!");
     }
 }
