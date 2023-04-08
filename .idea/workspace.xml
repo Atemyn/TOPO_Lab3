@@ -4,20 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="Создан тестовый класс для матричного калькулятора">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MatrixCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MatrixCalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2O9A37Yi7VhjVITrTi4TTrESOMP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -41,8 +48,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680962223609</updated>
-      <workItem from="1680962225399" duration="595000" />
+      <workItem from="1680962225399" duration="1239000" />
     </task>
+    <task id="LOCAL-00001" summary="Создано пустое приложение">
+      <created>1680962952198</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680962952198</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Создан тестовый класс для матричного калькулятора">
+      <created>1680963144194</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680963144194</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -58,5 +80,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Создано пустое приложение" />
+    <MESSAGE value="Создан тестовый класс для матричного калькулятора" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создан тестовый класс для матричного калькулятора" />
   </component>
 </project>
