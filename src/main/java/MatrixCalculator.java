@@ -10,6 +10,12 @@ public class MatrixCalculator {
         return new double[0][0];
     }
 
+    /**
+     * Метод для умножения матрицы на число
+     * @param matrix первый аргумент, матрица, содержащая вещественные числа
+     * @param number второй аргумент, любое вещественное число
+     * @return результат умножения каждого элемента первого аргумента на второй аргумент
+     */
     public double[][] multiply(double[][] matrix, double number) {
         // TODO Реализовать метод умножения матрицы на число до конца.
         return  new double[0][0];
