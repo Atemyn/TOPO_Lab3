@@ -21,4 +21,11 @@ public class MatrixCalculatorTest {
         Assertions.assertArrayEquals(new double[0][0],
                 matrixCalculator.multiply(new double[0][0], 5.0));
     }
+
+    @Test
+    void multiplyMatricesZeroOrderTest() {
+        MatrixCalculator matrixCalculator = new MatrixCalculator();
+        Assertions.assertArrayEquals(new double[0][0],
+                matrixCalculator.multiply(new double[0][0], new double[0][0]));
+    }
 }
