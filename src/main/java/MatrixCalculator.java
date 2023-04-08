@@ -45,6 +45,11 @@ public class MatrixCalculator {
                 "нулевого порядка не может быть вычислен!");
     }
 
+    /**
+     * Метод для транспонирования матрицы
+     * @param matrix первый аргумент, матрица, содержащая вещественные числа
+     * @return транспонированный первый аргумент
+     */
     public double[][] transpose(double[][] matrix) throws ZeroOrderMatrixException {
         // TODO Реализовать метод транспонирования матрицы до конца.
         throw new ZeroOrderMatrixException("Транспонирование" +
