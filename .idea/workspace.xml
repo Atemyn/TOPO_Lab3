@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="Добавлен Javadoc для метода умножения матрицы на число">
+    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="Добавлен Javadoc для метода умножения двух матриц">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/MatrixCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MatrixCalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +127,28 @@
       <option name="project" value="LOCAL" />
       <updated>1680965636583</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Создан тест с матрицами нулевого порядка для метода умножения двух матриц">
+      <created>1680965820245</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680965820245</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Создана тривиальная реализация метода умножения двух матриц. Тест multiplyMatricesZeroOrderTest выполняется успешно">
+      <created>1680965901911</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1680965901911</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Добавлен Javadoc для метода умножения двух матриц">
+      <created>1680965991718</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1680965991718</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +174,9 @@
     <MESSAGE value="Создан тест с матрицей нулевого порядка для метода умножения матрицы на число" />
     <MESSAGE value="Создана тривиальная реализация метода умножения матрицы на число. Тест multiplyMatrixZeroOrderByNumberTest выполняется успешно" />
     <MESSAGE value="Добавлен Javadoc для метода умножения матрицы на число" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен Javadoc для метода умножения матрицы на число" />
+    <MESSAGE value="Создан тест с матрицами нулевого порядка для метода умножения двух матриц" />
+    <MESSAGE value="Создана тривиальная реализация метода умножения двух матриц. Тест multiplyMatricesZeroOrderTest выполняется успешно" />
+    <MESSAGE value="Добавлен Javadoc для метода умножения двух матриц" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен Javadoc для метода умножения двух матриц" />
   </component>
 </project>

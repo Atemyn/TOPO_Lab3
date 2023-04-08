@@ -28,4 +28,11 @@ public class MatrixCalculatorTest {
         Assertions.assertArrayEquals(new double[0][0],
                 matrixCalculator.multiply(new double[0][0], new double[0][0]));
     }
+
+    @Test
+    void determinantZeroOrderTest() {
+        MatrixCalculator matrixCalculator = new MatrixCalculator();
+        Assertions.assertThrows(ZeroOrderMatrixException.class,
+                () -> matrixCalculator.determinant(new double[0][0]));
+    }
 }
