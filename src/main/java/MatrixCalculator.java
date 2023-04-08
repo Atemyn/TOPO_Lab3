@@ -21,6 +21,12 @@ public class MatrixCalculator {
         return  new double[0][0];
     }
 
+    /**
+     * Метод для умножения двух матриц
+     * @param matrix1 первый аргумент, матрица, содержащая вещественные числа
+     * @param matrix2 второй аргумент, матрица, содержащая вещественные числа
+     * @return результат умножения двух аргументов
+     */
     public double[][] multiply(double[][] matrix1, double[][] matrix2) {
         // TODO Реализовать метод умножения двух матриц до конца.
         return  new double[0][0];
