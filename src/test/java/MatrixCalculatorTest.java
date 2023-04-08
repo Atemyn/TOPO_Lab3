@@ -9,9 +9,16 @@ public class MatrixCalculatorTest {
     }
 
     @Test
-    void addMatricesZeroOrderTest(){
+    void addMatricesZeroOrderTest() {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
         Assertions.assertArrayEquals(new double[0][0],
                 matrixCalculator.add(new double[0][0], new double[0][0]));
+    }
+
+    @Test
+    void multiplyMatrixZeroOrderByNumberTest() {
+        MatrixCalculator matrixCalculator = new MatrixCalculator();
+        Assertions.assertArrayEquals(new double[0][0],
+                matrixCalculator.multiply(new double[0][0], 5.0));
     }
 }
