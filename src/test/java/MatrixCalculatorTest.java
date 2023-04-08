@@ -36,4 +36,11 @@ public class MatrixCalculatorTest {
         Assertions.assertThrows(ZeroOrderMatrixException.class,
                 () -> matrixCalculator.determinant(new double[0][0]));
     }
+
+    @Test
+    void transposeZeroOrderTest() {
+        MatrixCalculator matrixCalculator = new MatrixCalculator();
+        Assertions.assertThrows(ZeroOrderMatrixException.class,
+                () -> matrixCalculator.transpose(new double[0][0]));
+    }
 }
