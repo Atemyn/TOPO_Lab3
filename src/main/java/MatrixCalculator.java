@@ -35,12 +35,19 @@ public class MatrixCalculator {
     }
 
     /**
-     * ћетод дл€ умножени€ двух матриц
+     * ћетод дл€ нахождени€ определител€ матрицы
      * @param matrix первый аргумент, матрица, содержаща€ вещественные числа
      * @return определитель первого аргумента
      */
     public double determinant(double[][] matrix) throws ZeroOrderMatrixException {
+        // TODO –еализовать метод нахождени€ определител€ матрицы до конца.
         throw new ZeroOrderMatrixException("ќпределитель матрицы" +
                 "нулевого пор€дка не может быть вычислен!");
+    }
+
+    public double[][] transpose(double[][] matrix) throws ZeroOrderMatrixException {
+        // TODO –еализовать метод транспонировани€ матрицы до конца.
+        throw new ZeroOrderMatrixException("“ранспонирование" +
+                "матрицы нулевого пор€дка невозможно!");
     }
 }
