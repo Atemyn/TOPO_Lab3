@@ -17,6 +17,16 @@ public class MatrixCalculatorTest {
     }
 
     @Test
+    void addMatricesFirstOrderTest() {
+        MatrixCalculator matrixCalculator = new MatrixCalculator();
+        double[][] firstMatrix = {{ 5.0 }}, secondMatrix = {{ -10.0 }},
+        resultMatrix = {{ -5.0 }};
+
+        Assertions.assertArrayEquals(resultMatrix,
+                matrixCalculator.add(firstMatrix, secondMatrix));
+    }
+
+    @Test
     void multiplyMatrixZeroOrderByNumberTest() {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
         Assertions.assertArrayEquals(new double[0][0],

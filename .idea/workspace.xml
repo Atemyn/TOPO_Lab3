@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="Создан тест с матрицей нулевого порядка для метода транспонирования матрицы">
-      <change beforePath="$PROJECT_DIR$/src/main/java/MatrixCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MatrixCalculator.java" afterDir="false" />
+    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="Добавлен Javadoc для метода транспонирования матрицы">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MatrixCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MatrixCalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680962223609</updated>
       <workItem from="1680962225399" duration="1239000" />
+      <workItem from="1681213315001" duration="1653000" />
     </task>
     <task id="LOCAL-00001" summary="Создано пустое приложение">
       <created>1680962952198</created>
@@ -187,7 +189,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680967302853</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Создана тривиальная реализация метода транспонирования матрицы. Тест transposeZeroOrderTest выполняется успешно">
+      <created>1680967489706</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1680967489706</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Добавлен Javadoc для метода транспонирования матрицы">
+      <created>1680967567988</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1680967567988</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +237,8 @@
     <MESSAGE value="Создана тривиальная реализация метода нахождения определителя матрицы. Тест determinantZeroOrderTest выполняется успешно" />
     <MESSAGE value="Добавлен Javadoc для метода нахождения определителя матрицы" />
     <MESSAGE value="Создан тест с матрицей нулевого порядка для метода транспонирования матрицы" />
-    <option name="LAST_COMMIT_MESSAGE" value="Создан тест с матрицей нулевого порядка для метода транспонирования матрицы" />
+    <MESSAGE value="Создана тривиальная реализация метода транспонирования матрицы. Тест transposeZeroOrderTest выполняется успешно" />
+    <MESSAGE value="Добавлен Javadoc для метода транспонирования матрицы" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен Javadoc для метода транспонирования матрицы" />
   </component>
 </project>
