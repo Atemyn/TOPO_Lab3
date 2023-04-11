@@ -52,6 +52,16 @@ public class MatrixCalculatorTest {
     }
 
     @Test
+    void multiplyMatrix2x4OrderByNumberTest() {
+        MatrixCalculator matrixCalculator = new MatrixCalculator();
+        double[][] matrix = {{ 2.0, 4.0, 8.0, 16.0 }, {32.0, 64.0, 128.0, 256.0}},
+                resultMatrix = {{ 4.0, 8.0, 16.0, 32.0 }, {64.0, 128.0, 256.0, 512.0}};
+
+        Assertions.assertArrayEquals(resultMatrix,
+                matrixCalculator.multiply(matrix, 2.0));
+    }
+
+    @Test
     void multiplyMatricesZeroOrderTest() {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
         Assertions.assertArrayEquals(new double[0][0],
