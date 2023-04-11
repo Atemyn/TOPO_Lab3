@@ -21,10 +21,26 @@ public class Main {
             System.out.print("Введите цифру интересующего Вас варианта: ");
             operation = Integer.parseInt(reader.readLine());
 
+            switch (operation) {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    break;
+                case 0:
+                    break;
+                default:
+                    System.out.println("Матричный калькулятор не содержит функции под номером" + operation);
+            }
         } while (operation != 0);
     }
 
-    private double[][] readMatrix(int rowsCount, int columnsCount) throws IOException {
+    private static double[][] readMatrix(int rowsCount, int columnsCount) throws IOException {
         double[][] matrix = new double[rowsCount][columnsCount];
         for (int i = 0; i < rowsCount; i++) {
             for (int j = 0; j < columnsCount; j++) {
@@ -33,5 +49,14 @@ public class Main {
             }
         }
         return matrix;
+    }
+
+    private static void printMatrix(double[][] matrix) {
+        for (double[] row : matrix) {
+            for (double element : row) {
+                System.out.format("%8.2f", element);
+            }
+            System.out.println();
+        }
     }
 }
