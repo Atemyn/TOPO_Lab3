@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="Тривиальная реализация метода сложения матриц дополнена. Тест addMatricesFirstOrderTest выполняется успешно">
-      <change beforePath="$PROJECT_DIR$/src/test/java/MatrixCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MatrixCalculatorTest.java" afterDir="false" />
+    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="Создан тест с матрицами порядка 3x4 для метода сложения матриц">
+      <change beforePath="$PROJECT_DIR$/src/main/java/MatrixCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MatrixCalculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680962223609</updated>
       <workItem from="1680962225399" duration="1239000" />
-      <workItem from="1681213315001" duration="2010000" />
+      <workItem from="1681213315001" duration="2374000" />
     </task>
     <task id="LOCAL-00001" summary="Создано пустое приложение">
       <created>1680962952198</created>
@@ -216,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681217617218</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Создан тест с матрицами порядка 3x4 для метода сложения матриц">
+      <created>1681218018377</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1681218018377</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +261,7 @@
     <MESSAGE value="Добавлен Javadoc для метода транспонирования матрицы" />
     <MESSAGE value="Создан тест с матрицами первого порядка для метода сложения матриц" />
     <MESSAGE value="Тривиальная реализация метода сложения матриц дополнена. Тест addMatricesFirstOrderTest выполняется успешно" />
-    <option name="LAST_COMMIT_MESSAGE" value="Тривиальная реализация метода сложения матриц дополнена. Тест addMatricesFirstOrderTest выполняется успешно" />
+    <MESSAGE value="Создан тест с матрицами порядка 3x4 для метода сложения матриц" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создан тест с матрицами порядка 3x4 для метода сложения матриц" />
   </component>
 </project>
