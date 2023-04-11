@@ -177,6 +177,15 @@ public class MatrixCalculatorTest {
     }
 
     @Test
+    void determinant4x4OrderTest() throws ZeroOrderMatrixException {
+        MatrixCalculator matrixCalculator = new MatrixCalculator();
+        double[][] matrix = {{ 1.0, 2.0, 2.0, 1.0 }, { 4.0, 6.0, 7.0, 4.0 },
+                { 12.0, 7.0, 7.0, 9.0 }, { 9.0, 14.0, 15.0, 9.0 }};
+
+        Assertions.assertEquals(6.0, matrixCalculator.determinant(matrix));
+    }
+
+    @Test
     void transposeZeroOrderTest() {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
 
