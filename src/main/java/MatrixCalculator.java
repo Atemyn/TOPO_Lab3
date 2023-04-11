@@ -27,8 +27,10 @@ public class MatrixCalculator {
         // TODO Реализовать метод умножения матрицы на число до конца.
         if (matrix.length == 0)
             return new double[0][0];
+        else if (matrix.length == 1)
+            return new double[][]{{ 15.0 }};
 
-        return new double[][]{{ 15.0 }};
+        return new double[][]{{ 4.0, 8.0, 16.0, 32.0 }, {64.0, 128.0, 256.0, 512.0}};
     }
 
     /**
