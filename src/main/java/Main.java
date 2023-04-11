@@ -20,22 +20,34 @@ public class Main {
             System.out.println("(0) - Выход из программы");
             System.out.print("Введите цифру интересующего Вас варианта: ");
             operation = Integer.parseInt(reader.readLine());
+            int rowsCount, columnsCount;
+            double[][] matrix, matrix1, matrix2, resultMatrix;
 
             switch (operation) {
                 case 1:
-                    int matrix1RowsCount = readMatrixRowsCount();
-                    int matrix1ColumnsCount = readMatrixColumnsCount();
-                    double[][] matrix1 = readMatrix(matrix1RowsCount, matrix1ColumnsCount);
+                    rowsCount = readMatrixRowsCount();
+                    columnsCount = readMatrixColumnsCount();
+                    matrix1 = readMatrix(rowsCount, columnsCount);
 
-                    int matrix2RowsCount = readMatrixRowsCount();
-                    int matrix2ColumnsCount = readMatrixColumnsCount();
-                    double[][] matrix2 = readMatrix(matrix2RowsCount, matrix2ColumnsCount);
+                    rowsCount = readMatrixRowsCount();
+                    columnsCount = readMatrixColumnsCount();
+                    matrix2 = readMatrix(rowsCount, columnsCount);
 
-                    double[][] resultMatrix = matrixCalculator.add(matrix1, matrix2);
+                    resultMatrix = matrixCalculator.add(matrix1, matrix2);
                     System.out.println("Результат сложения двух матриц: ");
                     printMatrix(resultMatrix);
                     break;
                 case 2:
+                    rowsCount = readMatrixRowsCount();
+                    columnsCount = readMatrixColumnsCount();
+                    matrix = readMatrix(rowsCount, columnsCount);
+
+                    System.out.print("Введите число, на которое нужно умножить матрицу: ");
+                    double number = Double.parseDouble(reader.readLine());
+
+                    resultMatrix = matrixCalculator.multiply(matrix, number);
+                    System.out.println("Результат умножения матрицы на число: ");
+                    printMatrix(resultMatrix);
                     break;
                 case 3:
                     break;
