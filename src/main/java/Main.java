@@ -5,9 +5,8 @@ import java.io.InputStreamReader;
 public class Main {
     private static final BufferedReader reader =
             new BufferedReader(new InputStreamReader(System.in));
+    private static final MatrixCalculator matrixCalculator = new MatrixCalculator();
     public static void main(String[] args) throws IOException {
-
-        var matrixCalculator = new MatrixCalculator();
         int operation = 0;
 
         do {
@@ -20,34 +19,13 @@ public class Main {
             System.out.println("(0) - Выход из программы");
             System.out.print("Введите цифру интересующего Вас варианта: ");
             operation = Integer.parseInt(reader.readLine());
-            int rowsCount, columnsCount;
-            double[][] matrix, matrix1, matrix2, resultMatrix;
 
             switch (operation) {
                 case 1:
-                    rowsCount = readMatrixRowsCount();
-                    columnsCount = readMatrixColumnsCount();
-                    matrix1 = readMatrix(rowsCount, columnsCount);
-
-                    rowsCount = readMatrixRowsCount();
-                    columnsCount = readMatrixColumnsCount();
-                    matrix2 = readMatrix(rowsCount, columnsCount);
-
-                    resultMatrix = matrixCalculator.add(matrix1, matrix2);
-                    System.out.println("Результат сложения двух матриц: ");
-                    printMatrix(resultMatrix);
+                    executeAddOperation();
                     break;
                 case 2:
-                    rowsCount = readMatrixRowsCount();
-                    columnsCount = readMatrixColumnsCount();
-                    matrix = readMatrix(rowsCount, columnsCount);
-
-                    System.out.print("Введите число, на которое нужно умножить матрицу: ");
-                    double number = Double.parseDouble(reader.readLine());
-
-                    resultMatrix = matrixCalculator.multiply(matrix, number);
-                    System.out.println("Результат умножения матрицы на число: ");
-                    printMatrix(resultMatrix);
+                    executeMultiplyByNumberOperation();
                     break;
                 case 3:
                     break;
@@ -61,6 +39,33 @@ public class Main {
                     System.out.println("Матричный калькулятор не содержит функции под номером" + operation);
             }
         } while (operation != 0);
+    }
+
+    private static void executeAddOperation() throws IOException {
+        int rowsCount = readMatrixRowsCount();
+        int columnsCount = readMatrixColumnsCount();
+        double[][] matrix1 = readMatrix(rowsCount, columnsCount);
+
+        rowsCount = readMatrixRowsCount();
+        columnsCount = readMatrixColumnsCount();
+        double[][] matrix2 = readMatrix(rowsCount, columnsCount);
+
+        double[][] resultMatrix = matrixCalculator.add(matrix1, matrix2);
+        System.out.println("Результат сложения двух матриц: ");
+        printMatrix(resultMatrix);
+    }
+
+    private static void executeMultiplyByNumberOperation() throws IOException {
+        int rowsCount = readMatrixRowsCount();
+        int columnsCount = readMatrixColumnsCount();
+        double[][] matrix = readMatrix(rowsCount, columnsCount);
+
+        System.out.print("Введите число, на которое нужно умножить матрицу: ");
+        double number = Double.parseDouble(reader.readLine());
+
+        double[][] resultMatrix = matrixCalculator.multiply(matrix, number);
+        System.out.println("Результат умножения матрицы на число: ");
+        printMatrix(resultMatrix);
     }
 
     private static int readMatrixRowsCount() throws IOException {
