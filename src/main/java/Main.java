@@ -23,6 +23,17 @@ public class Main {
 
             switch (operation) {
                 case 1:
+                    int matrix1RowsCount = readMatrixRowsCount();
+                    int matrix1ColumnsCount = readMatrixColumnsCount();
+                    double[][] matrix1 = readMatrix(matrix1RowsCount, matrix1ColumnsCount);
+
+                    int matrix2RowsCount = readMatrixRowsCount();
+                    int matrix2ColumnsCount = readMatrixColumnsCount();
+                    double[][] matrix2 = readMatrix(matrix2RowsCount, matrix2ColumnsCount);
+
+                    double[][] resultMatrix = matrixCalculator.add(matrix1, matrix2);
+                    System.out.println("Результат сложения двух матриц: ");
+                    printMatrix(resultMatrix);
                     break;
                 case 2:
                     break;
