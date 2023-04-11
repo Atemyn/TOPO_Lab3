@@ -36,11 +36,12 @@ public class Main {
                     executeDeterminantOperation();
                     break;
                 case 5:
+                    executeTransposeOperation();
                     break;
                 case 0:
                     break;
                 default:
-                    System.out.println("Матричный калькулятор не содержит функции под номером" + operation);
+                    System.out.println("Матричный калькулятор не содержит функции под номером " + operation);
             }
         } while (operation != 0);
     }
@@ -93,6 +94,16 @@ public class Main {
 
         double determinant = matrixCalculator.determinant(matrix);
         System.out.format("Определитель матрицы: %f\n", determinant);
+    }
+
+    private static void executeTransposeOperation() throws IOException, ZeroOrderMatrixException {
+        int rowsCount = readMatrixRowsCount();
+        int columnsCount = readMatrixColumnsCount();
+        double[][] matrix = readMatrix(rowsCount, columnsCount);
+
+        double[][] resultMatrix = matrixCalculator.transpose(matrix);
+        System.out.println("Транспонированная матрица: ");
+        printMatrix(resultMatrix);
     }
 
     private static int readMatrixRowsCount() throws IOException {

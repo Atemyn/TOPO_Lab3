@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="Обработки вариантов со сложением и с умножением на число вынесены в отдельные методы">
+    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="Добавлена обработка варианта с нахождением определителя матрицы">
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680962223609</updated>
       <workItem from="1680962225399" duration="1239000" />
-      <workItem from="1681213315001" duration="9321000" />
+      <workItem from="1681213315001" duration="9625000" />
     </task>
     <task id="LOCAL-00001" summary="Создано пустое приложение">
       <created>1680962952198</created>
@@ -398,7 +398,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681226941538</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Добавлена обработка варианта с умножением двух матриц">
+      <created>1681227017174</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1681227017174</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Добавлена обработка варианта с нахождением определителя матрицы">
+      <created>1681227203018</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1681227203018</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,8 +430,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Тривиальная реализация метода сложения матриц дополнена результатом для теста с матрицами порядка 3x4. Тест addMatrices3x4OrderTest выполняется успешно" />
-    <MESSAGE value="Создан тест с матрицей первого порядка для метода умножения матрицы на число" />
     <MESSAGE value="Тривиальная реализация метода умножения матрицы на число дополнена результатом для теста с матрицей первого порядка. Тест multiplyMatrixFirstOrderByNumberTest выполняется успешно" />
     <MESSAGE value="Создан тест с матрицами порядка 2x4 для метода умножения матрицы на число" />
     <MESSAGE value="Тривиальная реализация метода умножения матрицы на число дополнена результатом для теста с матрицей порядка 2x4. Тест multiplyMatrix2x4OrderByNumberTest выполняется успешно" />
@@ -441,6 +453,8 @@
     <MESSAGE value="Добавлена обработка выбора варианта со сложением матриц" />
     <MESSAGE value="Добавлена обработка выбора варианта с умножением матрицы на число" />
     <MESSAGE value="Обработки вариантов со сложением и с умножением на число вынесены в отдельные методы" />
-    <option name="LAST_COMMIT_MESSAGE" value="Обработки вариантов со сложением и с умножением на число вынесены в отдельные методы" />
+    <MESSAGE value="Добавлена обработка варианта с умножением двух матриц" />
+    <MESSAGE value="Добавлена обработка варианта с нахождением определителя матрицы" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлена обработка варианта с нахождением определителя матрицы" />
   </component>
 </project>
