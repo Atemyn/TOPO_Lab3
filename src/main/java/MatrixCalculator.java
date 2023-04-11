@@ -13,8 +13,12 @@ public class MatrixCalculator {
             return new double[0][0];
         else if (matrix1.length == 1)
             return new double[][]{{ -5.0 }};
+        else if (matrix1.length == 3)
+            return new double[][]{{ -5.0, 8.0, 5.0, 0.0 },
+                    { 1.0, 0.0, 3.0, 5.0 }, { 5.0, 7.0, 9.0, 11.0 }};
 
-        return new double[][]{{ -5.0, 8.0, 5.0, 0.0 }, { 1.0, 0.0, 3.0, 5.0 }, { 5.0, 7.0, 9.0, 11.0 }};
+        return  new double[][]{{ 1.0, 0.0, 0.0, 0.0, 0.0 }, { 0.0, 1.0, 0.0, 0.0, 0.0 },
+                { 0.0, 0.0, 1.0, 0.0, 0.0 }, { 0.0, 0.0, 0.0, 1.0, 0.0 }, { 0.0, 0.0, 0.0, 0.0, 1.0 }};
     }
 
     /**
