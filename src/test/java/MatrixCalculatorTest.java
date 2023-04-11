@@ -123,6 +123,19 @@ public class MatrixCalculatorTest {
     }
 
     @Test
+    void multiplyMatrices4x5OrderTest() {
+        MatrixCalculator matrixCalculator = new MatrixCalculator();
+        double[][] firstMatrix = {{ 1.0, 2.0, 3.0, 4.0, 5.0 }, { 6.0, 7.0, 8.0, 9.0, 10.0 },
+                { 11.0, 12.0, 13.0, 14.0, 15.0 }, { 16.0, 17.0, 18.0, 19.0, 20.0 }},
+                secondMatrix = {{ 2.0, 4.0, 6.0, 8.0}, { 10.0, 12.0, 14.0, 16.0 },
+                        {18.0, 20.0, 22.0, 24.0 }, { 26.0, 28.0, 30.0, 32.0 }, { 34.0, 36.0, 38.0, 40.0  }},
+                resultMatrix = {{ 350.0, 380.0, 410.0, 440.0 }, { 800.0, 880.0, 960.0, 1040.0 },
+                        { 1250.0, 1380.0, 1510.0, 1640.0 }, { 1700.0, 1880.0, 2060.0, 2240.0 }};
+        Assertions.assertArrayEquals(resultMatrix,
+                matrixCalculator.multiply(firstMatrix, secondMatrix));
+    }
+
+    @Test
     void determinantZeroOrderTest() {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
         Assertions.assertThrows(ZeroOrderMatrixException.class,
