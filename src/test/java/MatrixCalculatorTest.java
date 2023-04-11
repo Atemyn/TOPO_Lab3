@@ -7,12 +7,14 @@ public class MatrixCalculatorTest {
     @Test
     void matrixCalculatorCreationTest() {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
+
         Assertions.assertNotNull(matrixCalculator);
     }
 
     @Test
     void addMatricesZeroOrderTest() throws IncompatibleMatrixOrder {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
+
         Assertions.assertArrayEquals(new double[0][0],
                 matrixCalculator.add(new double[0][0], new double[0][0]));
     }
@@ -65,6 +67,7 @@ public class MatrixCalculatorTest {
     @Test
     void multiplyMatrixZeroOrderByNumberTest() {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
+
         Assertions.assertArrayEquals(new double[0][0],
                 matrixCalculator.multiply(new double[0][0], 5.0));
     }
@@ -72,6 +75,7 @@ public class MatrixCalculatorTest {
     @Test
     void multiplyMatrixFirstOrderByNumberTest() {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
+
         Assertions.assertArrayEquals(new double[][]{{ 15.0 }},
                 matrixCalculator.multiply(new double[][]{{ 3.0 }}, 5.0));
     }
@@ -101,6 +105,7 @@ public class MatrixCalculatorTest {
     @Test
     void multiplyMatricesZeroOrderTest() {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
+
         Assertions.assertArrayEquals(new double[0][0],
                 matrixCalculator.multiply(new double[0][0], new double[0][0]));
     }
@@ -108,6 +113,7 @@ public class MatrixCalculatorTest {
     @Test
     void multiplyMatricesFirstOrderTest() {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
+
         Assertions.assertArrayEquals(new double[][]{{ 18.0 }},
                 matrixCalculator.multiply(new double[][]{{ 9.0 }}, new double[][]{{ 2.0 }}));
     }
@@ -118,6 +124,7 @@ public class MatrixCalculatorTest {
         double[][] firstMatrix = {{ 5.0, 1.0, -3.0}, { 2.0, -8.0, 12.0 }},
                 secondMatrix = {{ 2.0, 16.0 }, { 4.0, 32.0 }, { 8.0, 64.0 }},
                 resultMatrix = {{ -10.0, -80.0 }, { 68.0, 544.0 }};
+
         Assertions.assertArrayEquals(resultMatrix,
                 matrixCalculator.multiply(firstMatrix, secondMatrix));
     }
@@ -131,13 +138,24 @@ public class MatrixCalculatorTest {
                         {18.0, 20.0, 22.0, 24.0 }, { 26.0, 28.0, 30.0, 32.0 }, { 34.0, 36.0, 38.0, 40.0  }},
                 resultMatrix = {{ 350.0, 380.0, 410.0, 440.0 }, { 800.0, 880.0, 960.0, 1040.0 },
                         { 1250.0, 1380.0, 1510.0, 1640.0 }, { 1700.0, 1880.0, 2060.0, 2240.0 }};
+
         Assertions.assertArrayEquals(resultMatrix,
                 matrixCalculator.multiply(firstMatrix, secondMatrix));
     }
 
     @Test
+    void multiplyMatricesIncompatibleOrdersTest() {
+        MatrixCalculator matrixCalculator = new MatrixCalculator();
+        double[][] firstMatrix = {{ 1.0, 2.0, 3.0 }, { 4.0, 5.0, 6.0 }};
+
+        Assertions.assertThrows(IncompatibleMatrixOrder.class,
+                () -> matrixCalculator.multiply(firstMatrix, firstMatrix));
+    }
+
+    @Test
     void determinantZeroOrderTest() {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
+
         Assertions.assertThrows(ZeroOrderMatrixException.class,
                 () -> matrixCalculator.determinant(new double[0][0]));
     }
@@ -145,6 +163,7 @@ public class MatrixCalculatorTest {
     @Test
     void determinantFirstOrderTest() throws ZeroOrderMatrixException {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
+
         Assertions.assertEquals(10.0,
                 matrixCalculator.determinant(new double[][]{{ 10.0 }}));
     }
@@ -152,6 +171,7 @@ public class MatrixCalculatorTest {
     @Test
     void determinant2x2OrderTest() throws ZeroOrderMatrixException {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
+
         Assertions.assertEquals(0.0,
                 matrixCalculator.determinant(new double[][]{{ 10.0, 20.0 }, { 5.0, 10.0 }}));
     }
@@ -159,6 +179,7 @@ public class MatrixCalculatorTest {
     @Test
     void transposeZeroOrderTest() {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
+
         Assertions.assertThrows(ZeroOrderMatrixException.class,
                 () -> matrixCalculator.transpose(new double[0][0]));
     }
@@ -166,6 +187,7 @@ public class MatrixCalculatorTest {
     @Test
     void transposeFirstOrderTest() throws ZeroOrderMatrixException {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
+
         Assertions.assertArrayEquals(new double[][]{{ 1337.0 }},
                 matrixCalculator.transpose(new double[][]{{ 1337.0 }}));
     }
