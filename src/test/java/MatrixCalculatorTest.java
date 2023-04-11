@@ -45,6 +45,13 @@ public class MatrixCalculatorTest {
     }
 
     @Test
+    void multiplyMatrixFirstOrderByNumberTest() {
+        MatrixCalculator matrixCalculator = new MatrixCalculator();
+        Assertions.assertArrayEquals(new double[][]{{ 15.0 }},
+                matrixCalculator.multiply(new double[][]{{ 3.0 }}, 5.0));
+    }
+
+    @Test
     void multiplyMatricesZeroOrderTest() {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
         Assertions.assertArrayEquals(new double[0][0],
