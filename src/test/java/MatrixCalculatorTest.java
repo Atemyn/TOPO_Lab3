@@ -93,6 +93,13 @@ public class MatrixCalculatorTest {
     }
 
     @Test
+    void determinantFirstOrderTest() throws ZeroOrderMatrixException {
+        MatrixCalculator matrixCalculator = new MatrixCalculator();
+        Assertions.assertEquals(10.0,
+                matrixCalculator.determinant(new double[][]{{ 10.0 }}));
+    }
+
+    @Test
     void transposeZeroOrderTest() {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
         Assertions.assertThrows(ZeroOrderMatrixException.class,
