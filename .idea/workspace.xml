@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="Тривиальная реализация метода сложения матриц дополнена результатом для теста с матрицами порядка 5x5. Тест addMatrices5x5OrderTest выполняется успешно">
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/IncompatibleMatricesOrders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/MatrixOperationException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exceptions/ZeroOrderMatrixException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exceptions/ZeroOrderMatrixException.java" afterDir="false" />
+    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="Добавлено новое исключение для реакции на случаи, когда у матриц несовместимые порядки или когда матрица не может быть прямоугольной">
+      <change beforePath="$PROJECT_DIR$/src/test/java/MatrixCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MatrixCalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,14 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680962223609</updated>
       <workItem from="1680962225399" duration="1239000" />
-      <workItem from="1681213315001" duration="11514000" />
-    </task>
-    <task id="LOCAL-00003" summary="Создан тест для метода сложения двух матриц с матрицами нулевого порядка">
-      <created>1680964667365</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1680964667365</updated>
+      <workItem from="1681213315001" duration="11822000" />
     </task>
     <task id="LOCAL-00004" summary="Создана тривиальная реализация метода сложения двух матриц. Метод addMatricesZeroOrderTest выполняется успешно">
       <created>1680964808074</created>
@@ -429,7 +420,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681230602765</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Добавлено новое исключение для реакции на случаи, когда у матриц несовместимые порядки или когда матрица не может быть прямоугольной">
+      <created>1681230941782</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1681230941782</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,7 +445,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Создан тест с матрицами первого порядка для метода умножения матриц" />
     <MESSAGE value="Тривиальная реализация метода умножения матриц дополнена результатом для теста с матрицами первого порядка. Тест multiplyMatricesFirstOrderTest выполняется успешно" />
     <MESSAGE value="Создан тест с матрицами порядка 2x3 и 3x2 для метода умножения матриц" />
     <MESSAGE value="Тривиальная реализация метода умножения матриц дополнена результатом для теста с матрицами порядка 2x3 и 3x2. Тест multiplyMatrices2x3OrderTest выполняется успешно" />
@@ -472,6 +469,7 @@
     <MESSAGE value="Добавлена обработка варианта с транспонированием матрицы" />
     <MESSAGE value="Создан тест с матрицами порядка 5x5 для метода сложения матриц" />
     <MESSAGE value="Тривиальная реализация метода сложения матриц дополнена результатом для теста с матрицами порядка 5x5. Тест addMatrices5x5OrderTest выполняется успешно" />
-    <option name="LAST_COMMIT_MESSAGE" value="Тривиальная реализация метода сложения матриц дополнена результатом для теста с матрицами порядка 5x5. Тест addMatrices5x5OrderTest выполняется успешно" />
+    <MESSAGE value="Добавлено новое исключение для реакции на случаи, когда у матриц несовместимые порядки или когда матрица не может быть прямоугольной" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлено новое исключение для реакции на случаи, когда у матриц несовместимые порядки или когда матрица не может быть прямоугольной" />
   </component>
 </project>
