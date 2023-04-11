@@ -87,6 +87,18 @@ public class MatrixCalculatorTest {
     }
 
     @Test
+    void multiplyMatrix4x5OrderByNumberTest() {
+        MatrixCalculator matrixCalculator = new MatrixCalculator();
+        double[][] matrix = {{ 4.5, 4.0, 3.5, 3.0, 2.5 }, { 2.0, 1.5, 1.0, 0.5, 0.0 },
+                { 0.5, 1.0, 1.5, 2.0, 2.5 }, { 3.0, 3.5, 4.0, 4.5, 5.0 }},
+                resultMatrix = {{ 18.0, 16.0, 14.0, 12.0, 10.0 }, { 8.0, 6.0, 4.0, 2.0, 0.0 },
+                        { 2.0, 4.0, 6.0, 8.0, 10.0 }, { 12.0, 14.0, 16.0, 18.0, 20.0 }};
+
+        Assertions.assertArrayEquals(resultMatrix,
+                matrixCalculator.multiply(matrix, 4.0));
+    }
+
+    @Test
     void multiplyMatricesZeroOrderTest() {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
         Assertions.assertArrayEquals(new double[0][0],
