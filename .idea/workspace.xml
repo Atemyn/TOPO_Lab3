@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="Создан тест с прямоугольной (не квадратной) матрицей для метода нахождения определителя матрицы">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="Создан тест с матрицей порядка 4x4 для метода транспонирования матрицы">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MatrixCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MatrixCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exceptions/MatrixOperationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exceptions/MatrixOperationException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MatrixCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MatrixCalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,21 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680962223609</updated>
       <workItem from="1680962225399" duration="1239000" />
-      <workItem from="1681213315001" duration="14643000" />
-    </task>
-    <task id="LOCAL-00015" summary="Добавлен Javadoc для метода нахождения определителя матрицы">
-      <created>1680967132254</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1680967132254</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Создан тест с матрицей нулевого порядка для метода транспонирования матрицы">
-      <created>1680967302853</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1680967302853</updated>
+      <workItem from="1681213315001" duration="15405000" />
     </task>
     <task id="LOCAL-00017" summary="Создана тривиальная реализация метода транспонирования матрицы. Тест transposeZeroOrderTest выполняется успешно">
       <created>1680967489706</created>
@@ -430,7 +414,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681233828927</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Тривиальная реализация метода нахождения определителя матрицы дополнена результатом для теста с прямоугольной (не квадратной) матрицей. Тест determinantIncompatibleOrderTest выполняется успешно">
+      <created>1681234040520</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1681234040520</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Создан тест с матрицей порядка 4x4 для метода транспонирования матрицы">
+      <created>1681234241251</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1681234241252</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -448,8 +446,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Создан класс Main" />
-    <MESSAGE value="Создан цикл с выводом инструкции о функциях матричного калькулятора" />
     <MESSAGE value="Написан метод для ввода матрицы из терминала" />
     <MESSAGE value="Написан метод для вывода матрицы в консоль" />
     <MESSAGE value="Написаны методы для чтения из терминала количества строк и столбцов матрицы" />
@@ -473,6 +469,8 @@
     <MESSAGE value="Создан тест с матрицей порядка 4x4 для метода нахождения определителя матрицы" />
     <MESSAGE value="Тривиальная реализация метода нахождения определителя матрицы дополнена результатом для теста с матрицей порядка 4x4. Тест determinant4x4OrderTest выполняется успешно" />
     <MESSAGE value="Создан тест с прямоугольной (не квадратной) матрицей для метода нахождения определителя матрицы" />
-    <option name="LAST_COMMIT_MESSAGE" value="Создан тест с прямоугольной (не квадратной) матрицей для метода нахождения определителя матрицы" />
+    <MESSAGE value="Тривиальная реализация метода нахождения определителя матрицы дополнена результатом для теста с прямоугольной (не квадратной) матрицей. Тест determinantIncompatibleOrderTest выполняется успешно" />
+    <MESSAGE value="Создан тест с матрицей порядка 4x4 для метода транспонирования матрицы" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создан тест с матрицей порядка 4x4 для метода транспонирования матрицы" />
   </component>
 </project>
