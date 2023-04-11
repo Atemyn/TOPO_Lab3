@@ -69,6 +69,13 @@ public class MatrixCalculatorTest {
     }
 
     @Test
+    void multiplyMatricesFirstOrderTest() {
+        MatrixCalculator matrixCalculator = new MatrixCalculator();
+        Assertions.assertArrayEquals(new double[][]{{ 18.0 }},
+                matrixCalculator.multiply(new double[][]{{ 9.0 }}, new double[][]{{ 2.0 }}));
+    }
+
+    @Test
     void determinantZeroOrderTest() {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
         Assertions.assertThrows(ZeroOrderMatrixException.class,
