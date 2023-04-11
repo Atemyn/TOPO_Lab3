@@ -1,4 +1,5 @@
 import exceptions.IncompatibleMatrixOrder;
+import exceptions.MatrixOperationException;
 import exceptions.ZeroOrderMatrixException;
 
 public class MatrixCalculator {
@@ -70,11 +71,13 @@ public class MatrixCalculator {
      * @param matrix первый аргумент, матрица, содержащая вещественные числа
      * @return определитель первого аргумента
      */
-    public double determinant(double[][] matrix) throws ZeroOrderMatrixException {
+    public double determinant(double[][] matrix) throws MatrixOperationException {
         // TODO Реализовать метод нахождения определителя матрицы до конца.
         if (matrix.length == 0)
             throw new ZeroOrderMatrixException("Определитель матрицы " +
                     "нулевого порядка не может быть вычислен!");
+        else if (matrix[0].length != matrix.length)
+            throw new IncompatibleMatrixOrder("Определитель не может быть вычислен у неквадратной матрицы!");
         else if (matrix.length == 1)
             return 10.0;
         else if (matrix.length == 2)

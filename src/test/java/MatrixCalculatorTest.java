@@ -1,4 +1,5 @@
 import exceptions.IncompatibleMatrixOrder;
+import exceptions.MatrixOperationException;
 import exceptions.ZeroOrderMatrixException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -161,7 +162,7 @@ public class MatrixCalculatorTest {
     }
 
     @Test
-    void determinantFirstOrderTest() throws ZeroOrderMatrixException {
+    void determinantFirstOrderTest() throws MatrixOperationException {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
 
         Assertions.assertEquals(10.0,
@@ -169,7 +170,7 @@ public class MatrixCalculatorTest {
     }
 
     @Test
-    void determinant2x2OrderTest() throws ZeroOrderMatrixException {
+    void determinant2x2OrderTest() throws MatrixOperationException {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
 
         Assertions.assertEquals(0.0,
@@ -177,7 +178,7 @@ public class MatrixCalculatorTest {
     }
 
     @Test
-    void determinant4x4OrderTest() throws ZeroOrderMatrixException {
+    void determinant4x4OrderTest() throws MatrixOperationException {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
         double[][] matrix = {{ 1.0, 2.0, 2.0, 1.0 }, { 4.0, 6.0, 7.0, 4.0 },
                 { 12.0, 7.0, 7.0, 9.0 }, { 9.0, 14.0, 15.0, 9.0 }};

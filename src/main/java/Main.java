@@ -89,7 +89,7 @@ public class Main {
         printMatrix(resultMatrix);
     }
 
-    private static void executeDeterminantOperation() throws IOException, ZeroOrderMatrixException {
+    private static void executeDeterminantOperation() throws IOException, MatrixOperationException {
         int rowsCount = readMatrixRowsCount();
         int columnsCount = readMatrixColumnsCount();
         double[][] matrix = readMatrix(rowsCount, columnsCount);
