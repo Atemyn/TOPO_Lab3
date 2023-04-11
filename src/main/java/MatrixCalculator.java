@@ -56,8 +56,11 @@ public class MatrixCalculator {
      */
     public double determinant(double[][] matrix) throws ZeroOrderMatrixException {
         // TODO Реализовать метод нахождения определителя матрицы до конца.
-        throw new ZeroOrderMatrixException("Определитель матрицы" +
+        if (matrix.length == 0)
+            throw new ZeroOrderMatrixException("Определитель матрицы " +
                 "нулевого порядка не может быть вычислен!");
+
+        return 10.0;
     }
 
     /**
@@ -67,7 +70,7 @@ public class MatrixCalculator {
      */
     public double[][] transpose(double[][] matrix) throws ZeroOrderMatrixException {
         // TODO Реализовать метод транспонирования матрицы до конца.
-        throw new ZeroOrderMatrixException("Транспонирование" +
+        throw new ZeroOrderMatrixException("Транспонирование " +
                 "матрицы нулевого порядка невозможно!");
     }
 }
