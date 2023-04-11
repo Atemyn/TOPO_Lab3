@@ -1,3 +1,5 @@
+import exceptions.IncompatibleMatrixOrder;
+import exceptions.MatrixOperationException;
 import exceptions.ZeroOrderMatrixException;
 
 import java.io.BufferedReader;
@@ -8,8 +10,8 @@ public class Main {
     private static final BufferedReader reader =
             new BufferedReader(new InputStreamReader(System.in));
     private static final MatrixCalculator matrixCalculator = new MatrixCalculator();
-    public static void main(String[] args) throws IOException, ZeroOrderMatrixException {
-        int operation = 0;
+    public static void main(String[] args) throws IOException, MatrixOperationException {
+        int operation;
 
         do {
             System.out.println("Матричный калькулятор поддерживает следующие функции:");
@@ -46,7 +48,7 @@ public class Main {
         } while (operation != 0);
     }
 
-    private static void executeAddOperation() throws IOException {
+    private static void executeAddOperation() throws IOException, IncompatibleMatrixOrder {
         int rowsCount = readMatrixRowsCount();
         int columnsCount = readMatrixColumnsCount();
         double[][] matrix1 = readMatrix(rowsCount, columnsCount);

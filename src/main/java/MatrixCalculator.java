@@ -1,3 +1,4 @@
+import exceptions.IncompatibleMatrixOrder;
 import exceptions.ZeroOrderMatrixException;
 
 public class MatrixCalculator {
@@ -7,10 +8,13 @@ public class MatrixCalculator {
      * @param matrix2 второй аргумент, матрица, содержащая вещественные числа
      * @return результат сложения двух аргументов
      */
-    public double[][] add(double[][] matrix1, double[][] matrix2) {
+    public double[][] add(double[][] matrix1, double[][] matrix2) throws IncompatibleMatrixOrder {
         // TODO Реализовать метод сложения матриц до конца.
         if (matrix1.length == 0)
             return new double[0][0];
+        else if (matrix1.length != matrix2.length ||
+                matrix1[0].length != matrix2[0].length)
+            throw new IncompatibleMatrixOrder("Матрицы имеют несовместимые порядки!");
         else if (matrix1.length == 1)
             return new double[][]{{ -5.0 }};
         else if (matrix1.length == 3)

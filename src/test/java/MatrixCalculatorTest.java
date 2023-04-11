@@ -11,14 +11,14 @@ public class MatrixCalculatorTest {
     }
 
     @Test
-    void addMatricesZeroOrderTest() {
+    void addMatricesZeroOrderTest() throws IncompatibleMatrixOrder {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
         Assertions.assertArrayEquals(new double[0][0],
                 matrixCalculator.add(new double[0][0], new double[0][0]));
     }
 
     @Test
-    void addMatricesFirstOrderTest() {
+    void addMatricesFirstOrderTest() throws IncompatibleMatrixOrder {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
         double[][] firstMatrix = {{ 5.0 }}, secondMatrix = {{ -10.0 }},
         resultMatrix = {{ -5.0 }};
@@ -28,7 +28,7 @@ public class MatrixCalculatorTest {
     }
 
     @Test
-    void addMatrices3x4OrderTest() {
+    void addMatrices3x4OrderTest() throws IncompatibleMatrixOrder {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
         double[][] firstMatrix = {{ 5.0, 2.0, 1.5, 7.89 }, { 9.0, -6.57, 2.5, 1.7 }, { 1.0, 2.0, 3.0, 4.0 }},
                 secondMatrix = {{ -10.0, 6.0, 3.5, -7.89 }, { -8.0, 6.57, 0.5, 3.3 }, { 4.0, 5.0, 6.0, 7.0 }},
@@ -39,7 +39,7 @@ public class MatrixCalculatorTest {
     }
 
     @Test
-    void addMatrices5x5OrderTest() {
+    void addMatrices5x5OrderTest() throws IncompatibleMatrixOrder {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
         double[][] firstMatrix = {{ 9.0, 8.0, 7.0, 6.0, 5.0 }, { 4.0, 3.0, 2.0, 1.0, 0.0 }, { 1.0, 2.0, 3.0, 4.0, 5.0 },
                 { 6.0, 7.0, 8.0, 9.0, 10.0 }, { 11.0, 12.0, 13.0, 14.0, 15.0 }},
