@@ -2,6 +2,8 @@ import exceptions.IncompatibleMatrixOrder;
 import exceptions.MatrixOperationException;
 import exceptions.ZeroOrderMatrixException;
 
+import java.util.stream.IntStream;
+
 public class MatrixCalculator {
     /**
      * Метод для сложения двух матриц
@@ -10,20 +12,17 @@ public class MatrixCalculator {
      * @return результат сложения двух аргументов
      */
     public double[][] add(double[][] matrix1, double[][] matrix2) throws IncompatibleMatrixOrder {
-        // TODO Реализовать метод сложения матриц до конца.
         if (matrix1.length == 0)
             return new double[0][0];
         else if (matrix1.length != matrix2.length ||
                 matrix1[0].length != matrix2[0].length)
             throw new IncompatibleMatrixOrder("Матрицы имеют несовместимые порядки!");
-        else if (matrix1.length == 1)
-            return new double[][]{{ -5.0 }};
-        else if (matrix1.length == 3)
-            return new double[][]{{ -5.0, 8.0, 5.0, 0.0 },
-                    { 1.0, 0.0, 3.0, 5.0 }, { 5.0, 7.0, 9.0, 11.0 }};
 
-        return  new double[][]{{ 1.0, 0.0, 0.0, 0.0, 0.0 }, { 0.0, 1.0, 0.0, 0.0, 0.0 },
-                { 0.0, 0.0, 1.0, 0.0, 0.0 }, { 0.0, 0.0, 0.0, 1.0, 0.0 }, { 0.0, 0.0, 0.0, 0.0, 1.0 }};
+        return IntStream.range(0, matrix1.length)
+                .mapToObj(i -> IntStream.range(0, matrix1[0].length)
+                        .mapToDouble(j -> matrix1[i][j] + matrix2[i][j])
+                        .toArray())
+                .toArray(double[][]::new);
     }
 
     /**
