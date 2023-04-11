@@ -27,6 +27,20 @@ public class MatrixCalculatorTest {
     }
 
     @Test
+    void addMatrices5x5OrderTest() {
+        MatrixCalculator matrixCalculator = new MatrixCalculator();
+        double[][] firstMatrix = {{ 9.0, 8.0, 7.0, 6.0, 5.0 }, { 4.0, 3.0, 2.0, 1.0, 0.0 }, { 1.0, 2.0, 3.0, 4.0, 5.0 },
+                { 6.0, 7.0, 8.0, 9.0, 10.0 }, { 11.0, 12.0, 13.0, 14.0, 15.0 }},
+                secondMatrix = {{ -8.0, -8.0, -7.0, -6.0, -5.0 }, { -4.0, -2.0, -2.0, -1.0, 0.0 }, { -1.0, -2.0, -2.0, -4.0, -5.0 },
+                        { -6.0, -7.0, -8.0, -8.0, -10.0 }, { -11.0, -12.0, -13.0, -14.0, -14.0 }},
+                resultMatrix = {{ 1.0, 0.0, 0.0, 0.0, 0.0 }, { 0.0, 1.0, 0.0, 0.0, 0.0 }, { 0.0, 0.0, 1.0, 0.0, 0.0 },
+                        { 0.0, 0.0, 0.0, 1.0, 0.0 }, { 0.0, 0.0, 0.0, 0.0, 1.0 }};
+
+        Assertions.assertArrayEquals(resultMatrix,
+                matrixCalculator.add(firstMatrix, secondMatrix));
+    }
+
+    @Test
     void addMatrices3x4OrderTest() {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
         double[][] firstMatrix = {{ 5.0, 2.0, 1.5, 7.89 }, { 9.0, -6.57, 2.5, 1.7 }, { 1.0, 2.0, 3.0, 4.0 }},
