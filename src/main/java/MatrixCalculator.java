@@ -46,18 +46,25 @@ public class MatrixCalculator {
      * @return результат умножения двух аргументов
      */
     public double[][] multiply(double[][] matrix1, double[][] matrix2) throws IncompatibleMatrixOrder {
-        // TODO Реализовать метод умножения двух матриц до конца.
         if (matrix1.length == 0)
             return new double[0][0];
         else if (matrix1[0].length != matrix2.length)
             throw new IncompatibleMatrixOrder("Матрицы имеют несовместимые порядки!");
-        else if (matrix1.length == 1)
-            return new double[][]{{ 18.0 }};
-        else if (matrix1.length == 2)
-            return new double[][]{{ -10.0, -80.0 }, { 68.0, 544.0 }};
 
-        return new double[][]{{ 350.0, 380.0, 410.0, 440.0 }, { 800.0, 880.0, 960.0, 1040.0 },
-                { 1250.0, 1380.0, 1510.0, 1640.0 }, { 1700.0, 1880.0, 2060.0, 2240.0 }};
+        int matrix1RowsCount = matrix1.length;
+        int matrix1ColumnsCount = matrix1[0].length;
+        int matrix2ColumnsCount = matrix2[0].length;
+        double[][] resultMatrix = new double[matrix1RowsCount][matrix2ColumnsCount];
+
+        for (int i = 0; i < matrix1RowsCount; i++) {
+            for (int j = 0; j < matrix2ColumnsCount; j++) {
+                for (int k = 0; k < matrix1ColumnsCount; k++) {
+                    resultMatrix[i][j] += matrix1[i][k] * matrix2[k][j];
+                }
+            }
+        }
+
+        return resultMatrix;
     }
 
     /**
