@@ -28,6 +28,7 @@ public class Main {
                     executeMultiplyByNumberOperation();
                     break;
                 case 3:
+                    executeMultiplyByMatrixOperation();
                     break;
                 case 4:
                     break;
@@ -65,6 +66,20 @@ public class Main {
 
         double[][] resultMatrix = matrixCalculator.multiply(matrix, number);
         System.out.println("Результат умножения матрицы на число: ");
+        printMatrix(resultMatrix);
+    }
+
+    private static void executeMultiplyByMatrixOperation() throws IOException {
+        int rowsCount = readMatrixRowsCount();
+        int columnsCount = readMatrixColumnsCount();
+        double[][] matrix1 = readMatrix(rowsCount, columnsCount);
+
+        rowsCount = readMatrixRowsCount();
+        columnsCount = readMatrixColumnsCount();
+        double[][] matrix2 = readMatrix(rowsCount, columnsCount);
+
+        double[][] resultMatrix = matrixCalculator.multiply(matrix1, matrix2);
+        System.out.println("Результат умножения двух матриц: ");
         printMatrix(resultMatrix);
     }
 
