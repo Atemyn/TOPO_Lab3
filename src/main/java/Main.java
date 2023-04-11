@@ -1,3 +1,5 @@
+import exceptions.ZeroOrderMatrixException;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -6,7 +8,7 @@ public class Main {
     private static final BufferedReader reader =
             new BufferedReader(new InputStreamReader(System.in));
     private static final MatrixCalculator matrixCalculator = new MatrixCalculator();
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, ZeroOrderMatrixException {
         int operation = 0;
 
         do {
@@ -31,6 +33,7 @@ public class Main {
                     executeMultiplyByMatrixOperation();
                     break;
                 case 4:
+                    executeDeterminantOperation();
                     break;
                 case 5:
                     break;
@@ -81,6 +84,15 @@ public class Main {
         double[][] resultMatrix = matrixCalculator.multiply(matrix1, matrix2);
         System.out.println("Результат умножения двух матриц: ");
         printMatrix(resultMatrix);
+    }
+
+    private static void executeDeterminantOperation() throws IOException, ZeroOrderMatrixException {
+        int rowsCount = readMatrixRowsCount();
+        int columnsCount = readMatrixColumnsCount();
+        double[][] matrix = readMatrix(rowsCount, columnsCount);
+
+        double determinant = matrixCalculator.determinant(matrix);
+        System.out.format("Определитель матрицы: %f\n", determinant);
     }
 
     private static int readMatrixRowsCount() throws IOException {
