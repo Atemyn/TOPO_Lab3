@@ -58,7 +58,7 @@ public class MatrixCalculator {
         // TODO –еализовать метод нахождени€ определител€ матрицы до конца.
         if (matrix.length == 0)
             throw new ZeroOrderMatrixException("ќпределитель матрицы " +
-                "нулевого пор€дка не может быть вычислен!");
+                    "нулевого пор€дка не может быть вычислен!");
         else if (matrix.length == 1)
             return 10.0;
 
@@ -72,7 +72,10 @@ public class MatrixCalculator {
      */
     public double[][] transpose(double[][] matrix) throws ZeroOrderMatrixException {
         // TODO –еализовать метод транспонировани€ матрицы до конца.
-        throw new ZeroOrderMatrixException("“ранспонирование " +
-                "матрицы нулевого пор€дка невозможно!");
+        if (matrix.length == 0)
+            throw new ZeroOrderMatrixException("“ранспонирование " +
+                    "матрицы нулевого пор€дка невозможно!");
+
+        return new double[][]{{ 1337.0 }};
     }
 }
