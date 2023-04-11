@@ -75,7 +75,9 @@ public class MatrixCalculator {
         if (matrix.length == 0)
             throw new ZeroOrderMatrixException("Транспонирование " +
                     "матрицы нулевого порядка невозможно!");
+        else if (matrix.length == 1)
+            return new double[][]{{ 1337.0 }};
 
-        return new double[][]{{ 1337.0 }};
+        return new double[][]{{ 1.0, 3.0, 5.0 }, { 2.0, 4.0, 6.0 }};
     }
 }

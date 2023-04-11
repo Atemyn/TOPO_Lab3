@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="Тривиальная реализация метода нахождения определителя матрицы дополнена результатом для теста с матрицей порядка 2x2. Тест determinant2x2OrderTest выполняется успешно">
-      <change beforePath="$PROJECT_DIR$/src/test/java/MatrixCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MatrixCalculatorTest.java" afterDir="false" />
+    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="Создан тест с матрицей порядка 3x2 для метода транспонирования матрицы">
+      <change beforePath="$PROJECT_DIR$/src/main/java/MatrixCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MatrixCalculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680962223609</updated>
       <workItem from="1680962225399" duration="1239000" />
-      <workItem from="1681213315001" duration="4651000" />
+      <workItem from="1681213315001" duration="4991000" />
     </task>
     <task id="LOCAL-00001" summary="Создано пустое приложение">
       <created>1680962952198</created>
@@ -314,7 +314,28 @@
       <option name="project" value="LOCAL" />
       <updated>1681220166564</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Создан тест с матрицей первого порядка для метода транспонирования матрицы">
+      <created>1681220420318</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1681220420318</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Тривиальная реализация метода транспонирования матрицы дополнена результатом для теста с матрицей первого порядка. Тест transposeFirstOrderTest выполняется успешно">
+      <created>1681220497842</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1681220497842</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Создан тест с матрицей порядка 3x2 для метода транспонирования матрицы">
+      <created>1681220689375</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1681220689375</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,9 +353,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Создана тривиальная реализация метода умножения двух матриц. Тест multiplyMatricesZeroOrderTest выполняется успешно" />
-    <MESSAGE value="Добавлен Javadoc для метода умножения двух матриц" />
-    <MESSAGE value="Создан тест с матрицей нулевого порядка для метода нахождения определителя матрицы" />
     <MESSAGE value="Создан класс исключения при работе с матрицей нулевого порядка" />
     <MESSAGE value="Создана тривиальная реализация метода нахождения определителя матрицы. Тест determinantZeroOrderTest выполняется успешно" />
     <MESSAGE value="Добавлен Javadoc для метода нахождения определителя матрицы" />
@@ -357,6 +375,9 @@
     <MESSAGE value="Тривиальная реализация метода нахождения определителя матрицы дополнена результатом для теста с матрицей первого порядка. Тест determinantFirstOrderTest выполняется успешно" />
     <MESSAGE value="Создан тест с матрицей порядка 2x2 для метода нахождения определителя матрицы" />
     <MESSAGE value="Тривиальная реализация метода нахождения определителя матрицы дополнена результатом для теста с матрицей порядка 2x2. Тест determinant2x2OrderTest выполняется успешно" />
-    <option name="LAST_COMMIT_MESSAGE" value="Тривиальная реализация метода нахождения определителя матрицы дополнена результатом для теста с матрицей порядка 2x2. Тест determinant2x2OrderTest выполняется успешно" />
+    <MESSAGE value="Создан тест с матрицей первого порядка для метода транспонирования матрицы" />
+    <MESSAGE value="Тривиальная реализация метода транспонирования матрицы дополнена результатом для теста с матрицей первого порядка. Тест transposeFirstOrderTest выполняется успешно" />
+    <MESSAGE value="Создан тест с матрицей порядка 3x2 для метода транспонирования матрицы" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создан тест с матрицей порядка 3x2 для метода транспонирования матрицы" />
   </component>
 </project>
