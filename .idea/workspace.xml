@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="Написан метод для ввода матрицы из терминала">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="Написан метод для вывода матрицы в консоль">
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680962223609</updated>
       <workItem from="1680962225399" duration="1239000" />
-      <workItem from="1681213315001" duration="8118000" />
+      <workItem from="1681213315001" duration="8469000" />
     </task>
     <task id="LOCAL-00001" summary="Создано пустое приложение">
       <created>1680962952198</created>
@@ -364,7 +363,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681225010352</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Написан метод для вывода матрицы в консоль">
+      <created>1681225906754</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1681225906754</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -382,7 +388,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Создана тривиальная реализация метода транспонирования матрицы. Тест transposeZeroOrderTest выполняется успешно" />
     <MESSAGE value="Добавлен Javadoc для метода транспонирования матрицы" />
     <MESSAGE value="Создан тест с матрицами первого порядка для метода сложения матриц" />
     <MESSAGE value="Тривиальная реализация метода сложения матриц дополнена. Тест addMatricesFirstOrderTest выполняется успешно" />
@@ -407,6 +412,7 @@
     <MESSAGE value="Создан класс Main" />
     <MESSAGE value="Создан цикл с выводом инструкции о функциях матричного калькулятора" />
     <MESSAGE value="Написан метод для ввода матрицы из терминала" />
-    <option name="LAST_COMMIT_MESSAGE" value="Написан метод для ввода матрицы из терминала" />
+    <MESSAGE value="Написан метод для вывода матрицы в консоль" />
+    <option name="LAST_COMMIT_MESSAGE" value="Написан метод для вывода матрицы в консоль" />
   </component>
 </project>

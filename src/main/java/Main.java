@@ -40,6 +40,16 @@ public class Main {
         } while (operation != 0);
     }
 
+    private static int readMatrixRowsCount() throws IOException {
+        System.out.print("¬ведите количество строк матрицы: ");
+        return Integer.parseInt(reader.readLine());
+    }
+
+    private static int readMatrixColumnsCount() throws IOException {
+        System.out.print("¬ведите количество столбцов матрицы: ");
+        return Integer.parseInt(reader.readLine());
+    }
+
     private static double[][] readMatrix(int rowsCount, int columnsCount) throws IOException {
         double[][] matrix = new double[rowsCount][columnsCount];
         for (int i = 0; i < rowsCount; i++) {
@@ -48,6 +58,8 @@ public class Main {
                 matrix[i][j] = Double.parseDouble(reader.readLine());
             }
         }
+        System.out.println("¬ведена матрица: ");
+        printMatrix(matrix);
         return matrix;
     }
 
