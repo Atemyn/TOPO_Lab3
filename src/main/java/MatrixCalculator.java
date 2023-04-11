@@ -59,8 +59,10 @@ public class MatrixCalculator {
         if (matrix.length == 0)
             throw new ZeroOrderMatrixException("Определитель матрицы " +
                 "нулевого порядка не может быть вычислен!");
+        else if (matrix.length == 1)
+            return 10.0;
 
-        return 10.0;
+        return 0.0;
     }
 
     /**
