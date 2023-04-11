@@ -119,4 +119,13 @@ public class MatrixCalculatorTest {
         Assertions.assertArrayEquals(new double[][]{{ 1337.0 }},
                 matrixCalculator.transpose(new double[][]{{ 1337.0 }}));
     }
+
+    @Test
+    void transpose3x2OrderTest() throws ZeroOrderMatrixException {
+        MatrixCalculator matrixCalculator = new MatrixCalculator();
+        double[][] matrix = {{ 1.0, 2.0 }, { 3.0, 4.0 }, { 5.0, 6.0 }},
+                resultMatrix = {{ 1.0, 3.0, 5.0 }, { 2.0, 4.0, 6.0 }};
+
+        Assertions.assertArrayEquals(resultMatrix, matrixCalculator.transpose(matrix));
+    }
 }
