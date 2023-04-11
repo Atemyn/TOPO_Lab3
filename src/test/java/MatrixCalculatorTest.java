@@ -186,6 +186,14 @@ public class MatrixCalculatorTest {
     }
 
     @Test
+    void determinantIncompatibleOrderTest() {
+        MatrixCalculator matrixCalculator = new MatrixCalculator();
+
+        Assertions.assertThrows(IncompatibleMatrixOrder.class,
+                () -> matrixCalculator.determinant(new double[][]{{ 1.0, 2.0, 3.0}, { 4.0, 5.0, 6.0 }}));
+    }
+
+    @Test
     void transposeZeroOrderTest() {
         MatrixCalculator matrixCalculator = new MatrixCalculator();
 
