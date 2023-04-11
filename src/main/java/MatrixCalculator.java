@@ -50,10 +50,12 @@ public class MatrixCalculator {
      * @param matrix2 второй аргумент, матрица, содержащая вещественные числа
      * @return результат умножения двух аргументов
      */
-    public double[][] multiply(double[][] matrix1, double[][] matrix2) {
+    public double[][] multiply(double[][] matrix1, double[][] matrix2) throws IncompatibleMatrixOrder {
         // TODO Реализовать метод умножения двух матриц до конца.
         if (matrix1.length == 0)
             return new double[0][0];
+        else if (matrix1[0].length != matrix2.length)
+            throw new IncompatibleMatrixOrder("Матрицы имеют несовместимые порядки!");
         else if (matrix1.length == 1)
             return new double[][]{{ 18.0 }};
         else if (matrix1.length == 2)

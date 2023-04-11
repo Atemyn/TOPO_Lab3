@@ -75,7 +75,7 @@ public class Main {
         printMatrix(resultMatrix);
     }
 
-    private static void executeMultiplyByMatrixOperation() throws IOException {
+    private static void executeMultiplyByMatrixOperation() throws IOException, IncompatibleMatrixOrder {
         int rowsCount = readMatrixRowsCount();
         int columnsCount = readMatrixColumnsCount();
         double[][] matrix1 = readMatrix(rowsCount, columnsCount);
