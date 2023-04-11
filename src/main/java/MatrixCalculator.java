@@ -2,6 +2,7 @@ import exceptions.IncompatibleMatrixOrder;
 import exceptions.MatrixOperationException;
 import exceptions.ZeroOrderMatrixException;
 
+import java.util.Arrays;
 import java.util.stream.IntStream;
 
 public class MatrixCalculator {
@@ -14,7 +15,7 @@ public class MatrixCalculator {
     public double[][] add(double[][] matrix1, double[][] matrix2) throws IncompatibleMatrixOrder {
         if (matrix1.length == 0)
             return new double[0][0];
-        else if (matrix1.length != matrix2.length ||
+        if (matrix1.length != matrix2.length ||
                 matrix1[0].length != matrix2[0].length)
             throw new IncompatibleMatrixOrder("Матрицы имеют несовместимые порядки!");
 
@@ -32,16 +33,10 @@ public class MatrixCalculator {
      * @return результат умножения каждого элемента первого аргумента на второй аргумент
      */
     public double[][] multiply(double[][] matrix, double number) {
-        // TODO Реализовать метод умножения матрицы на число до конца.
-        if (matrix.length == 0)
-            return new double[0][0];
-        else if (matrix.length == 1)
-            return new double[][]{{ 15.0 }};
-        else if (matrix.length == 2)
-            return new double[][]{{ 4.0, 8.0, 16.0, 32.0 }, { 64.0, 128.0, 256.0, 512.0 }};
-
-        return new double[][]{{ 18.0, 16.0, 14.0, 12.0, 10.0 }, { 8.0, 6.0, 4.0, 2.0, 0.0 },
-                { 2.0, 4.0, 6.0, 8.0, 10.0 }, { 12.0, 14.0, 16.0, 18.0, 20.0 }};
+        return Arrays.stream(matrix).map(row -> IntStream.range(0, matrix[0].length)
+                        .mapToDouble(j -> row[j] * number)
+                        .toArray())
+                .toArray(double[][]::new);
     }
 
     /**
