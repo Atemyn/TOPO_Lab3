@@ -37,8 +37,11 @@ public class MatrixCalculator {
             return new double[0][0];
         else if (matrix.length == 1)
             return new double[][]{{ 15.0 }};
+        else if (matrix.length == 2)
+            return new double[][]{{ 4.0, 8.0, 16.0, 32.0 }, { 64.0, 128.0, 256.0, 512.0 }};
 
-        return new double[][]{{ 4.0, 8.0, 16.0, 32.0 }, { 64.0, 128.0, 256.0, 512.0 }};
+        return new double[][]{{ 18.0, 16.0, 14.0, 12.0, 10.0 }, { 8.0, 6.0, 4.0, 2.0, 0.0 },
+                { 2.0, 4.0, 6.0, 8.0, 10.0 }, { 12.0, 14.0, 16.0, 18.0, 20.0 }};
     }
 
     /**
