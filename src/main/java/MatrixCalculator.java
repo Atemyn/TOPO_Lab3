@@ -73,18 +73,37 @@ public class MatrixCalculator {
      * @return определитель первого аргумента
      */
     public double determinant(double[][] matrix) throws MatrixOperationException {
-        // TODO Реализовать метод нахождения определителя матрицы до конца.
         if (matrix.length == 0)
             throw new ZeroOrderMatrixException("Определитель матрицы " +
                     "нулевого порядка не может быть вычислен!");
-        else if (matrix[0].length != matrix.length)
+        if (matrix[0].length != matrix.length)
             throw new IncompatibleMatrixOrder("Определитель не может быть вычислен у неквадратной матрицы!");
-        else if (matrix.length == 1)
-            return 10.0;
-        else if (matrix.length == 2)
-            return 0.0;
 
-        return 6.0;
+        int matrixOrder = matrix.length;
+        double determinant = 0.0;
+
+        if (matrix.length == 1)
+            return matrix[0][0];
+        if (matrix.length == 2)
+            return matrix[0][0] * matrix[1][1] - matrix[0][1] * matrix[1][0];
+
+        for (int i = 0; i < matrixOrder; i++) {
+            double[][] submatrix = new double[matrixOrder - 1][matrixOrder - 1];
+
+            for (int j = 1; j < matrixOrder; j++) {
+                for (int k = 0; k < matrixOrder; k++) {
+                    if (k < i) {
+                        submatrix[j - 1][k] = matrix[j][k];
+                    } else if (k > i) {
+                        submatrix[j - 1][k - 1] = matrix[j][k];
+                    }
+                }
+            }
+
+            determinant += Math.pow(-1, i) * matrix[0][i] * determinant(submatrix);
+        }
+
+        return determinant;
     }
 
     /**
