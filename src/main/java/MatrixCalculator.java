@@ -112,16 +112,19 @@ public class MatrixCalculator {
      * @return транспонированный первый аргумент
      */
     public double[][] transpose(double[][] matrix) throws ZeroOrderMatrixException {
-        // TODO Реализовать метод транспонирования матрицы до конца.
         if (matrix.length == 0)
             throw new ZeroOrderMatrixException("Транспонирование " +
                     "матрицы нулевого порядка невозможно!");
-        else if (matrix.length == 1)
-            return new double[][]{{ 1337.0 }};
-        else if (matrix.length == 3)
-            return new double[][]{{ 1.0, 3.0, 5.0 }, { 2.0, 4.0, 6.0 }};
 
-        return new double[][]{{ 1.0, 5.0, 9.0, 13.0 }, { 2.0, 6.0, 10.0, 14.0 },
-                { 3.0, 7.0, 11.0, 15.0 }, { 4.0, 8.0, 12.0, 16.0 }};
+        int rowsCount = matrix.length, columnsCount = matrix[0].length;
+        double[][] transposedMatrix = new double[columnsCount][rowsCount];
+
+        for (int i = 0; i < rowsCount; i++) {
+            for (int j = 0; j < columnsCount; j++) {
+                transposedMatrix[j][i] = matrix[i][j];
+            }
+        }
+
+        return transposedMatrix;
     }
 }
