@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="Создан тест с матрицей порядка 3x2 для метода транспонирования матрицы">
-      <change beforePath="$PROJECT_DIR$/src/main/java/MatrixCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MatrixCalculator.java" afterDir="false" />
+    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="Тривиальная реализация метода транспонирования матрицы дополнена результатом для теста с матрицей порядка 3x2. Тест transpose3x2OrderTest выполняется успешно">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680962223609</updated>
       <workItem from="1680962225399" duration="1239000" />
-      <workItem from="1681213315001" duration="4991000" />
+      <workItem from="1681213315001" duration="5289000" />
     </task>
     <task id="LOCAL-00001" summary="Создано пустое приложение">
       <created>1680962952198</created>
@@ -335,7 +335,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681220689375</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Тривиальная реализация метода транспонирования матрицы дополнена результатом для теста с матрицей порядка 3x2. Тест transpose3x2OrderTest выполняется успешно">
+      <created>1681220775743</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1681220775743</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,7 +360,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Создан класс исключения при работе с матрицей нулевого порядка" />
     <MESSAGE value="Создана тривиальная реализация метода нахождения определителя матрицы. Тест determinantZeroOrderTest выполняется успешно" />
     <MESSAGE value="Добавлен Javadoc для метода нахождения определителя матрицы" />
     <MESSAGE value="Создан тест с матрицей нулевого порядка для метода транспонирования матрицы" />
@@ -378,6 +384,7 @@
     <MESSAGE value="Создан тест с матрицей первого порядка для метода транспонирования матрицы" />
     <MESSAGE value="Тривиальная реализация метода транспонирования матрицы дополнена результатом для теста с матрицей первого порядка. Тест transposeFirstOrderTest выполняется успешно" />
     <MESSAGE value="Создан тест с матрицей порядка 3x2 для метода транспонирования матрицы" />
-    <option name="LAST_COMMIT_MESSAGE" value="Создан тест с матрицей порядка 3x2 для метода транспонирования матрицы" />
+    <MESSAGE value="Тривиальная реализация метода транспонирования матрицы дополнена результатом для теста с матрицей порядка 3x2. Тест transpose3x2OrderTest выполняется успешно" />
+    <option name="LAST_COMMIT_MESSAGE" value="Тривиальная реализация метода транспонирования матрицы дополнена результатом для теста с матрицей порядка 3x2. Тест transpose3x2OrderTest выполняется успешно" />
   </component>
 </project>
