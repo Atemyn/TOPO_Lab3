@@ -1,6 +1,6 @@
 package exceptions;
 
-public class ZeroOrderMatrixException extends Exception {
+public class ZeroOrderMatrixException extends MatrixOperationException {
 
     public ZeroOrderMatrixException(String message) {
         super(message);
