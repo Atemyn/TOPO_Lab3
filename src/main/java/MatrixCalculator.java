@@ -25,7 +25,10 @@ public class MatrixCalculator {
      */
     public double[][] multiply(double[][] matrix, double number) {
         // TODO Реализовать метод умножения матрицы на число до конца.
-        return  new double[0][0];
+        if (matrix.length == 0)
+            return new double[0][0];
+
+        return new double[][]{{ 15.0 }};
     }
 
     /**

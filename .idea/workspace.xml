@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="Создан тест с матрицами порядка 3x4 для метода сложения матриц">
+    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="Создан тест с матрицей первого порядка для метода умножения матрицы на число">
       <change beforePath="$PROJECT_DIR$/src/main/java/MatrixCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MatrixCalculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680962223609</updated>
       <workItem from="1680962225399" duration="1239000" />
-      <workItem from="1681213315001" duration="2374000" />
+      <workItem from="1681213315001" duration="2723000" />
     </task>
     <task id="LOCAL-00001" summary="Создано пустое приложение">
       <created>1680962952198</created>
@@ -223,7 +223,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681218018377</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Тривиальная реализация метода сложения матриц дополнена результатом для теста с матрицами порядка 3x4. Тест addMatrices3x4OrderTest выполняется успешно">
+      <created>1681218181569</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1681218181569</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Создан тест с матрицей первого порядка для метода умножения матрицы на число">
+      <created>1681218408882</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1681218408882</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +276,8 @@
     <MESSAGE value="Создан тест с матрицами первого порядка для метода сложения матриц" />
     <MESSAGE value="Тривиальная реализация метода сложения матриц дополнена. Тест addMatricesFirstOrderTest выполняется успешно" />
     <MESSAGE value="Создан тест с матрицами порядка 3x4 для метода сложения матриц" />
-    <option name="LAST_COMMIT_MESSAGE" value="Создан тест с матрицами порядка 3x4 для метода сложения матриц" />
+    <MESSAGE value="Тривиальная реализация метода сложения матриц дополнена результатом для теста с матрицами порядка 3x4. Тест addMatrices3x4OrderTest выполняется успешно" />
+    <MESSAGE value="Создан тест с матрицей первого порядка для метода умножения матрицы на число" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создан тест с матрицей первого порядка для метода умножения матрицы на число" />
   </component>
 </project>
