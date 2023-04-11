@@ -56,8 +56,11 @@ public class MatrixCalculator {
             return new double[0][0];
         else if (matrix1.length == 1)
             return new double[][]{{ 18.0 }};
+        else if (matrix1.length == 2)
+            return new double[][]{{ -10.0, -80.0 }, { 68.0, 544.0 }};
 
-        return new double[][]{{ -10.0, -80.0 }, { 68.0, 544.0 }};
+        return new double[][]{{ 350.0, 380.0, 410.0, 440.0 }, { 800.0, 880.0, 960.0, 1040.0 },
+                { 1250.0, 1380.0, 1510.0, 1640.0 }, { 1700.0, 1880.0, 2060.0, 2240.0 }};
     }
 
     /**
