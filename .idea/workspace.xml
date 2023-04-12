@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="Дописан до конца метод нахождения определителя матрицы">
-      <change beforePath="$PROJECT_DIR$/src/main/java/MatrixCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MatrixCalculator.java" afterDir="false" />
+    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="Дописан до конца метод транспонирования матрицы">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +50,7 @@
       <recent name="exceptions" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MatrixCalculatorTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="TOPO_Lab3" />
@@ -68,8 +69,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MatrixCalculatorTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MatrixCalculatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -82,14 +83,8 @@
       <option name="presentableId" value="Default" />
       <updated>1680962223609</updated>
       <workItem from="1680962225399" duration="1239000" />
-      <workItem from="1681213315001" duration="17680000" />
-    </task>
-    <task id="LOCAL-00022" summary="Тривиальная реализация метода сложения матриц дополнена результатом для теста с матрицами порядка 3x4. Тест addMatrices3x4OrderTest выполняется успешно">
-      <created>1681218181569</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1681218181569</updated>
+      <workItem from="1681213315001" duration="18009000" />
+      <workItem from="1681292923075" duration="326000" />
     </task>
     <task id="LOCAL-00023" summary="Создан тест с матрицей первого порядка для метода умножения матрицы на число">
       <created>1681218408882</created>
@@ -427,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681236668160</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Дописан до конца метод транспонирования матрицы">
+      <created>1681237065991</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1681237065991</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -445,7 +447,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Обработки вариантов со сложением и с умножением на число вынесены в отдельные методы" />
     <MESSAGE value="Добавлена обработка варианта с умножением двух матриц" />
     <MESSAGE value="Добавлена обработка варианта с нахождением определителя матрицы" />
     <MESSAGE value="Добавлена обработка варианта с транспонированием матрицы" />
@@ -470,6 +471,7 @@
     <MESSAGE value="Дописан до конца метод умножения матрицы на число" />
     <MESSAGE value="Дописан до конца метод умножения матриц" />
     <MESSAGE value="Дописан до конца метод нахождения определителя матрицы" />
-    <option name="LAST_COMMIT_MESSAGE" value="Дописан до конца метод нахождения определителя матрицы" />
+    <MESSAGE value="Дописан до конца метод транспонирования матрицы" />
+    <option name="LAST_COMMIT_MESSAGE" value="Дописан до конца метод транспонирования матрицы" />
   </component>
 </project>

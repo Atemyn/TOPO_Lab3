@@ -10,7 +10,7 @@ public class Main {
     private static final BufferedReader reader =
             new BufferedReader(new InputStreamReader(System.in));
     private static final MatrixCalculator matrixCalculator = new MatrixCalculator();
-    public static void main(String[] args) throws IOException, MatrixOperationException {
+    public static void main(String[] args) {
         int operation;
 
         do {
@@ -22,28 +22,44 @@ public class Main {
             System.out.println("(5) - Транспонирование матрицы");
             System.out.println("(0) - Выход из программы");
             System.out.print("Введите цифру интересующего Вас варианта: ");
-            operation = Integer.parseInt(reader.readLine());
 
-            switch (operation) {
-                case 1:
-                    executeAddOperation();
-                    break;
-                case 2:
-                    executeMultiplyByNumberOperation();
-                    break;
-                case 3:
-                    executeMultiplyByMatrixOperation();
-                    break;
-                case 4:
-                    executeDeterminantOperation();
-                    break;
-                case 5:
-                    executeTransposeOperation();
-                    break;
-                case 0:
-                    break;
-                default:
-                    System.out.println("Матричный калькулятор не содержит функции под номером " + operation);
+            try {
+                operation = Integer.parseInt(reader.readLine());
+
+                switch (operation) {
+                    case 1:
+                        executeAddOperation();
+                        break;
+                    case 2:
+                        executeMultiplyByNumberOperation();
+                        break;
+                    case 3:
+                        executeMultiplyByMatrixOperation();
+                        break;
+                    case 4:
+                        executeDeterminantOperation();
+                        break;
+                    case 5:
+                        executeTransposeOperation();
+                        break;
+                    case 0:
+                        break;
+                    default:
+                        System.out.println("Матричный калькулятор не содержит функции под номером " + operation);
+                }
+            }
+            catch (IOException e) {
+                System.out.println("Ошибка получения данных из терминала: " + e.getMessage());
+                return;
+            }
+            catch (MatrixOperationException e) {
+                System.out.println("Ошибка выполнения операций с матрицей: " + e.getMessage());
+                return;
+            }
+            catch (Exception e) {
+                System.out.print("Непредвиденная ошибка: ");
+                e.printStackTrace();
+                return;
             }
         } while (operation != 0);
     }
