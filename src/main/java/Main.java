@@ -1,4 +1,4 @@
-import exceptions.IncompatibleMatrixOrder;
+import exceptions.IncompatibleMatrixOrderException;
 import exceptions.MatrixOperationException;
 import exceptions.ZeroOrderMatrixException;
 
@@ -64,7 +64,7 @@ public class Main {
         } while (operation != 0);
     }
 
-    private static void executeAddOperation() throws IOException, IncompatibleMatrixOrder {
+    private static void executeAddOperation() throws IOException, IncompatibleMatrixOrderException {
         int rowsCount = readMatrixRowsCount();
         int columnsCount = readMatrixColumnsCount();
         double[][] matrix1 = readMatrix(rowsCount, columnsCount);
@@ -91,7 +91,7 @@ public class Main {
         printMatrix(resultMatrix);
     }
 
-    private static void executeMultiplyByMatrixOperation() throws IOException, IncompatibleMatrixOrder {
+    private static void executeMultiplyByMatrixOperation() throws IOException, IncompatibleMatrixOrderException {
         int rowsCount = readMatrixRowsCount();
         int columnsCount = readMatrixColumnsCount();
         double[][] matrix1 = readMatrix(rowsCount, columnsCount);

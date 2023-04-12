@@ -1,4 +1,4 @@
-import exceptions.IncompatibleMatrixOrder;
+import exceptions.IncompatibleMatrixOrderException;
 import exceptions.MatrixOperationException;
 import exceptions.ZeroOrderMatrixException;
 
@@ -12,12 +12,12 @@ public class MatrixCalculator {
      * @param matrix2 второй аргумент, матрица, содержащая вещественные числа
      * @return результат сложения двух аргументов
      */
-    public double[][] add(double[][] matrix1, double[][] matrix2) throws IncompatibleMatrixOrder {
+    public double[][] add(double[][] matrix1, double[][] matrix2) throws IncompatibleMatrixOrderException {
         if (matrix1.length == 0)
             return new double[0][0];
         if (matrix1.length != matrix2.length ||
                 matrix1[0].length != matrix2[0].length)
-            throw new IncompatibleMatrixOrder("Матрицы имеют несовместимые порядки!");
+            throw new IncompatibleMatrixOrderException("Матрицы имеют несовместимые порядки!");
 
         return IntStream.range(0, matrix1.length)
                 .mapToObj(i -> IntStream.range(0, matrix1[0].length)
@@ -45,11 +45,11 @@ public class MatrixCalculator {
      * @param matrix2 второй аргумент, матрица, содержащая вещественные числа
      * @return результат умножения двух аргументов
      */
-    public double[][] multiply(double[][] matrix1, double[][] matrix2) throws IncompatibleMatrixOrder {
+    public double[][] multiply(double[][] matrix1, double[][] matrix2) throws IncompatibleMatrixOrderException {
         if (matrix1.length == 0)
             return new double[0][0];
         else if (matrix1[0].length != matrix2.length)
-            throw new IncompatibleMatrixOrder("Матрицы имеют несовместимые порядки!");
+            throw new IncompatibleMatrixOrderException("Матрицы имеют несовместимые порядки!");
 
         int matrix1RowsCount = matrix1.length;
         int matrix1ColumnsCount = matrix1[0].length;
@@ -77,7 +77,7 @@ public class MatrixCalculator {
             throw new ZeroOrderMatrixException("Определитель матрицы " +
                     "нулевого порядка не может быть вычислен!");
         if (matrix[0].length != matrix.length)
-            throw new IncompatibleMatrixOrder("Определитель не может быть вычислен у неквадратной матрицы!");
+            throw new IncompatibleMatrixOrderException("Определитель не может быть вычислен у неквадратной матрицы!");
 
         int matrixOrder = matrix.length;
         double determinant = 0.0;

@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="Добавлен блок try-catch для обработки основных исключений в методе main">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="Кодировки классов Main и MatrixCalculator изменены на UTF-8">
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MatrixCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MatrixCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exceptions/IncompatibleMatrixOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exceptions/IncompatibleMatrixOrderException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MatrixCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MatrixCalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,14 +86,7 @@
       <updated>1680962223609</updated>
       <workItem from="1680962225399" duration="1239000" />
       <workItem from="1681213315001" duration="18009000" />
-      <workItem from="1681292923075" duration="2216000" />
-    </task>
-    <task id="LOCAL-00024" summary="Тривиальная реализация метода умножения матрицы на число дополнена результатом для теста с матрицей первого порядка. Тест multiplyMatrixFirstOrderByNumberTest выполняется успешно">
-      <created>1681218509883</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1681218509883</updated>
+      <workItem from="1681292923075" duration="2702000" />
     </task>
     <task id="LOCAL-00025" summary="Создан тест с матрицами порядка 2x4 для метода умножения матрицы на число">
       <created>1681218710213</created>
@@ -430,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681293352129</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="Кодировки классов Main и MatrixCalculator изменены на UTF-8">
+      <created>1681306923018</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1681306923018</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -448,7 +449,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Добавлена обработка варианта с нахождением определителя матрицы" />
     <MESSAGE value="Добавлена обработка варианта с транспонированием матрицы" />
     <MESSAGE value="Создан тест с матрицами порядка 5x5 для метода сложения матриц" />
     <MESSAGE value="Тривиальная реализация метода сложения матриц дополнена результатом для теста с матрицами порядка 5x5. Тест addMatrices5x5OrderTest выполняется успешно" />
@@ -473,6 +473,7 @@
     <MESSAGE value="Дописан до конца метод нахождения определителя матрицы" />
     <MESSAGE value="Дописан до конца метод транспонирования матрицы" />
     <MESSAGE value="Добавлен блок try-catch для обработки основных исключений в методе main" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен блок try-catch для обработки основных исключений в методе main" />
+    <MESSAGE value="Кодировки классов Main и MatrixCalculator изменены на UTF-8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Кодировки классов Main и MatrixCalculator изменены на UTF-8" />
   </component>
 </project>
