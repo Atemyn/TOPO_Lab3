@@ -14,14 +14,14 @@ public class Main {
         int operation;
 
         do {
-            System.out.println("Матричный калькулятор поддерживает следующие функции:");
-            System.out.println("(1) - Сложение двух матриц");
-            System.out.println("(2) - Умножение матрицы на число");
-            System.out.println("(3) - Умножение матриц");
-            System.out.println("(4) - Нахождение определителя матрицы");
-            System.out.println("(5) - Транспонирование матрицы");
-            System.out.println("(0) - Выход из программы");
-            System.out.print("Введите цифру интересующего Вас варианта: ");
+            System.out.println("РњР°С‚СЂРёС‡РЅС‹Р№ РєР°Р»СЊРєСѓР»СЏС‚РѕСЂ РїРѕРґРґРµСЂР¶РёРІР°РµС‚ СЃР»РµРґСѓСЋС‰РёРµ С„СѓРЅРєС†РёРё:");
+            System.out.println("(1) - РЎР»РѕР¶РµРЅРёРµ РґРІСѓС… РјР°С‚СЂРёС†");
+            System.out.println("(2) - РЈРјРЅРѕР¶РµРЅРёРµ РјР°С‚СЂРёС†С‹ РЅР° С‡РёСЃР»Рѕ");
+            System.out.println("(3) - РЈРјРЅРѕР¶РµРЅРёРµ РјР°С‚СЂРёС†");
+            System.out.println("(4) - РќР°С…РѕР¶РґРµРЅРёРµ РѕРїСЂРµРґРµР»РёС‚РµР»СЏ РјР°С‚СЂРёС†С‹");
+            System.out.println("(5) - РўСЂР°РЅСЃРїРѕРЅРёСЂРѕРІР°РЅРёРµ РјР°С‚СЂРёС†С‹");
+            System.out.println("(0) - Р’С‹С…РѕРґ РёР· РїСЂРѕРіСЂР°РјРјС‹");
+            System.out.print("Р’РІРµРґРёС‚Рµ С†РёС„СЂСѓ РёРЅС‚РµСЂРµСЃСѓСЋС‰РµРіРѕ Р’Р°СЃ РІР°СЂРёР°РЅС‚Р°: ");
 
             try {
                 operation = Integer.parseInt(reader.readLine());
@@ -45,19 +45,19 @@ public class Main {
                     case 0:
                         break;
                     default:
-                        System.out.println("Матричный калькулятор не содержит функции под номером " + operation);
+                        System.out.println("РњР°С‚СЂРёС‡РЅС‹Р№ РєР°Р»СЊРєСѓР»СЏС‚РѕСЂ РЅРµ СЃРѕРґРµСЂР¶РёС‚ С„СѓРЅРєС†РёРё РїРѕРґ РЅРѕРјРµСЂРѕРј " + operation);
                 }
             }
             catch (IOException e) {
-                System.out.println("Ошибка получения данных из терминала: " + e.getMessage());
+                System.out.println("РћС€РёР±РєР° РїРѕР»СѓС‡РµРЅРёСЏ РґР°РЅРЅС‹С… РёР· С‚РµСЂРјРёРЅР°Р»Р°: " + e.getMessage());
                 return;
             }
             catch (MatrixOperationException e) {
-                System.out.println("Ошибка выполнения операций с матрицей: " + e.getMessage());
+                System.out.println("РћС€РёР±РєР° РІС‹РїРѕР»РЅРµРЅРёСЏ РѕРїРµСЂР°С†РёР№ СЃ РјР°С‚СЂРёС†РµР№: " + e.getMessage());
                 return;
             }
             catch (Exception e) {
-                System.out.print("Непредвиденная ошибка: ");
+                System.out.print("РќРµРїСЂРµРґРІРёРґРµРЅРЅР°СЏ РѕС€РёР±РєР°: ");
                 e.printStackTrace();
                 return;
             }
@@ -74,7 +74,7 @@ public class Main {
         double[][] matrix2 = readMatrix(rowsCount, columnsCount);
 
         double[][] resultMatrix = matrixCalculator.add(matrix1, matrix2);
-        System.out.println("Результат сложения двух матриц: ");
+        System.out.println("Р РµР·СѓР»СЊС‚Р°С‚ СЃР»РѕР¶РµРЅРёСЏ РґРІСѓС… РјР°С‚СЂРёС†: ");
         printMatrix(resultMatrix);
     }
 
@@ -83,11 +83,11 @@ public class Main {
         int columnsCount = readMatrixColumnsCount();
         double[][] matrix = readMatrix(rowsCount, columnsCount);
 
-        System.out.print("Введите число, на которое нужно умножить матрицу: ");
+        System.out.print("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ, РЅР° РєРѕС‚РѕСЂРѕРµ РЅСѓР¶РЅРѕ СѓРјРЅРѕР¶РёС‚СЊ РјР°С‚СЂРёС†Сѓ: ");
         double number = Double.parseDouble(reader.readLine());
 
         double[][] resultMatrix = matrixCalculator.multiply(matrix, number);
-        System.out.println("Результат умножения матрицы на число: ");
+        System.out.println("Р РµР·СѓР»СЊС‚Р°С‚ СѓРјРЅРѕР¶РµРЅРёСЏ РјР°С‚СЂРёС†С‹ РЅР° С‡РёСЃР»Рѕ: ");
         printMatrix(resultMatrix);
     }
 
@@ -101,7 +101,7 @@ public class Main {
         double[][] matrix2 = readMatrix(rowsCount, columnsCount);
 
         double[][] resultMatrix = matrixCalculator.multiply(matrix1, matrix2);
-        System.out.println("Результат умножения двух матриц: ");
+        System.out.println("Р РµР·СѓР»СЊС‚Р°С‚ СѓРјРЅРѕР¶РµРЅРёСЏ РґРІСѓС… РјР°С‚СЂРёС†: ");
         printMatrix(resultMatrix);
     }
 
@@ -111,7 +111,7 @@ public class Main {
         double[][] matrix = readMatrix(rowsCount, columnsCount);
 
         double determinant = matrixCalculator.determinant(matrix);
-        System.out.format("Определитель матрицы: %f\n", determinant);
+        System.out.format("РћРїСЂРµРґРµР»РёС‚РµР»СЊ РјР°С‚СЂРёС†С‹: %f\n", determinant);
     }
 
     private static void executeTransposeOperation() throws IOException, ZeroOrderMatrixException {
@@ -120,17 +120,17 @@ public class Main {
         double[][] matrix = readMatrix(rowsCount, columnsCount);
 
         double[][] resultMatrix = matrixCalculator.transpose(matrix);
-        System.out.println("Транспонированная матрица: ");
+        System.out.println("РўСЂР°РЅСЃРїРѕРЅРёСЂРѕРІР°РЅРЅР°СЏ РјР°С‚СЂРёС†Р°: ");
         printMatrix(resultMatrix);
     }
 
     private static int readMatrixRowsCount() throws IOException {
-        System.out.print("Введите количество строк матрицы: ");
+        System.out.print("Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚СЂРѕРє РјР°С‚СЂРёС†С‹: ");
         return Integer.parseInt(reader.readLine());
     }
 
     private static int readMatrixColumnsCount() throws IOException {
-        System.out.print("Введите количество столбцов матрицы: ");
+        System.out.print("Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚РѕР»Р±С†РѕРІ РјР°С‚СЂРёС†С‹: ");
         return Integer.parseInt(reader.readLine());
     }
 
@@ -138,11 +138,11 @@ public class Main {
         double[][] matrix = new double[rowsCount][columnsCount];
         for (int i = 0; i < rowsCount; i++) {
             for (int j = 0; j < columnsCount; j++) {
-                System.out.format("Введите элемент матрицы под номером [%d][%d]: ", i + 1, j + 1);
+                System.out.format("Р’РІРµРґРёС‚Рµ СЌР»РµРјРµРЅС‚ РјР°С‚СЂРёС†С‹ РїРѕРґ РЅРѕРјРµСЂРѕРј [%d][%d]: ", i + 1, j + 1);
                 matrix[i][j] = Double.parseDouble(reader.readLine());
             }
         }
-        System.out.println("Введена матрица: ");
+        System.out.println("Р’РІРµРґРµРЅР° РјР°С‚СЂРёС†Р°: ");
         printMatrix(matrix);
         return matrix;
     }

@@ -7,17 +7,17 @@ import java.util.stream.IntStream;
 
 public class MatrixCalculator {
     /**
-     * Метод для сложения двух матриц
-     * @param matrix1 первый аргумент, матрица, содержащая вещественные числа
-     * @param matrix2 второй аргумент, матрица, содержащая вещественные числа
-     * @return результат сложения двух аргументов
+     * РњРµС‚РѕРґ РґР»СЏ СЃР»РѕР¶РµРЅРёСЏ РґРІСѓС… РјР°С‚СЂРёС†
+     * @param matrix1 РїРµСЂРІС‹Р№ Р°СЂРіСѓРјРµРЅС‚, РјР°С‚СЂРёС†Р°, СЃРѕРґРµСЂР¶Р°С‰Р°СЏ РІРµС‰РµСЃС‚РІРµРЅРЅС‹Рµ С‡РёСЃР»Р°
+     * @param matrix2 РІС‚РѕСЂРѕР№ Р°СЂРіСѓРјРµРЅС‚, РјР°С‚СЂРёС†Р°, СЃРѕРґРµСЂР¶Р°С‰Р°СЏ РІРµС‰РµСЃС‚РІРµРЅРЅС‹Рµ С‡РёСЃР»Р°
+     * @return СЂРµР·СѓР»СЊС‚Р°С‚ СЃР»РѕР¶РµРЅРёСЏ РґРІСѓС… Р°СЂРіСѓРјРµРЅС‚РѕРІ
      */
     public double[][] add(double[][] matrix1, double[][] matrix2) throws IncompatibleMatrixOrder {
         if (matrix1.length == 0)
             return new double[0][0];
         if (matrix1.length != matrix2.length ||
                 matrix1[0].length != matrix2[0].length)
-            throw new IncompatibleMatrixOrder("Матрицы имеют несовместимые порядки!");
+            throw new IncompatibleMatrixOrder("РњР°С‚СЂРёС†С‹ РёРјРµСЋС‚ РЅРµСЃРѕРІРјРµСЃС‚РёРјС‹Рµ РїРѕСЂСЏРґРєРё!");
 
         return IntStream.range(0, matrix1.length)
                 .mapToObj(i -> IntStream.range(0, matrix1[0].length)
@@ -27,10 +27,10 @@ public class MatrixCalculator {
     }
 
     /**
-     * Метод для умножения матрицы на число
-     * @param matrix первый аргумент, матрица, содержащая вещественные числа
-     * @param number второй аргумент, любое вещественное число
-     * @return результат умножения каждого элемента первого аргумента на второй аргумент
+     * РњРµС‚РѕРґ РґР»СЏ СѓРјРЅРѕР¶РµРЅРёСЏ РјР°С‚СЂРёС†С‹ РЅР° С‡РёСЃР»Рѕ
+     * @param matrix РїРµСЂРІС‹Р№ Р°СЂРіСѓРјРµРЅС‚, РјР°С‚СЂРёС†Р°, СЃРѕРґРµСЂР¶Р°С‰Р°СЏ РІРµС‰РµСЃС‚РІРµРЅРЅС‹Рµ С‡РёСЃР»Р°
+     * @param number РІС‚РѕСЂРѕР№ Р°СЂРіСѓРјРµРЅС‚, Р»СЋР±РѕРµ РІРµС‰РµСЃС‚РІРµРЅРЅРѕРµ С‡РёСЃР»Рѕ
+     * @return СЂРµР·СѓР»СЊС‚Р°С‚ СѓРјРЅРѕР¶РµРЅРёСЏ РєР°Р¶РґРѕРіРѕ СЌР»РµРјРµРЅС‚Р° РїРµСЂРІРѕРіРѕ Р°СЂРіСѓРјРµРЅС‚Р° РЅР° РІС‚РѕСЂРѕР№ Р°СЂРіСѓРјРµРЅС‚
      */
     public double[][] multiply(double[][] matrix, double number) {
         return Arrays.stream(matrix).map(row -> IntStream.range(0, matrix[0].length)
@@ -40,16 +40,16 @@ public class MatrixCalculator {
     }
 
     /**
-     * Метод для умножения двух матриц
-     * @param matrix1 первый аргумент, матрица, содержащая вещественные числа
-     * @param matrix2 второй аргумент, матрица, содержащая вещественные числа
-     * @return результат умножения двух аргументов
+     * РњРµС‚РѕРґ РґР»СЏ СѓРјРЅРѕР¶РµРЅРёСЏ РґРІСѓС… РјР°С‚СЂРёС†
+     * @param matrix1 РїРµСЂРІС‹Р№ Р°СЂРіСѓРјРµРЅС‚, РјР°С‚СЂРёС†Р°, СЃРѕРґРµСЂР¶Р°С‰Р°СЏ РІРµС‰РµСЃС‚РІРµРЅРЅС‹Рµ С‡РёСЃР»Р°
+     * @param matrix2 РІС‚РѕСЂРѕР№ Р°СЂРіСѓРјРµРЅС‚, РјР°С‚СЂРёС†Р°, СЃРѕРґРµСЂР¶Р°С‰Р°СЏ РІРµС‰РµСЃС‚РІРµРЅРЅС‹Рµ С‡РёСЃР»Р°
+     * @return СЂРµР·СѓР»СЊС‚Р°С‚ СѓРјРЅРѕР¶РµРЅРёСЏ РґРІСѓС… Р°СЂРіСѓРјРµРЅС‚РѕРІ
      */
     public double[][] multiply(double[][] matrix1, double[][] matrix2) throws IncompatibleMatrixOrder {
         if (matrix1.length == 0)
             return new double[0][0];
         else if (matrix1[0].length != matrix2.length)
-            throw new IncompatibleMatrixOrder("Матрицы имеют несовместимые порядки!");
+            throw new IncompatibleMatrixOrder("РњР°С‚СЂРёС†С‹ РёРјРµСЋС‚ РЅРµСЃРѕРІРјРµСЃС‚РёРјС‹Рµ РїРѕСЂСЏРґРєРё!");
 
         int matrix1RowsCount = matrix1.length;
         int matrix1ColumnsCount = matrix1[0].length;
@@ -68,16 +68,16 @@ public class MatrixCalculator {
     }
 
     /**
-     * Метод для нахождения определителя матрицы
-     * @param matrix первый аргумент, матрица, содержащая вещественные числа
-     * @return определитель первого аргумента
+     * РњРµС‚РѕРґ РґР»СЏ РЅР°С…РѕР¶РґРµРЅРёСЏ РѕРїСЂРµРґРµР»РёС‚РµР»СЏ РјР°С‚СЂРёС†С‹
+     * @param matrix РїРµСЂРІС‹Р№ Р°СЂРіСѓРјРµРЅС‚, РјР°С‚СЂРёС†Р°, СЃРѕРґРµСЂР¶Р°С‰Р°СЏ РІРµС‰РµСЃС‚РІРµРЅРЅС‹Рµ С‡РёСЃР»Р°
+     * @return РѕРїСЂРµРґРµР»РёС‚РµР»СЊ РїРµСЂРІРѕРіРѕ Р°СЂРіСѓРјРµРЅС‚Р°
      */
     public double determinant(double[][] matrix) throws MatrixOperationException {
         if (matrix.length == 0)
-            throw new ZeroOrderMatrixException("Определитель матрицы " +
-                    "нулевого порядка не может быть вычислен!");
+            throw new ZeroOrderMatrixException("РћРїСЂРµРґРµР»РёС‚РµР»СЊ РјР°С‚СЂРёС†С‹ " +
+                    "РЅСѓР»РµРІРѕРіРѕ РїРѕСЂСЏРґРєР° РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РІС‹С‡РёСЃР»РµРЅ!");
         if (matrix[0].length != matrix.length)
-            throw new IncompatibleMatrixOrder("Определитель не может быть вычислен у неквадратной матрицы!");
+            throw new IncompatibleMatrixOrder("РћРїСЂРµРґРµР»РёС‚РµР»СЊ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РІС‹С‡РёСЃР»РµРЅ Сѓ РЅРµРєРІР°РґСЂР°С‚РЅРѕР№ РјР°С‚СЂРёС†С‹!");
 
         int matrixOrder = matrix.length;
         double determinant = 0.0;
@@ -107,14 +107,14 @@ public class MatrixCalculator {
     }
 
     /**
-     * Метод для транспонирования матрицы
-     * @param matrix первый аргумент, матрица, содержащая вещественные числа
-     * @return транспонированный первый аргумент
+     * РњРµС‚РѕРґ РґР»СЏ С‚СЂР°РЅСЃРїРѕРЅРёСЂРѕРІР°РЅРёСЏ РјР°С‚СЂРёС†С‹
+     * @param matrix РїРµСЂРІС‹Р№ Р°СЂРіСѓРјРµРЅС‚, РјР°С‚СЂРёС†Р°, СЃРѕРґРµСЂР¶Р°С‰Р°СЏ РІРµС‰РµСЃС‚РІРµРЅРЅС‹Рµ С‡РёСЃР»Р°
+     * @return С‚СЂР°РЅСЃРїРѕРЅРёСЂРѕРІР°РЅРЅС‹Р№ РїРµСЂРІС‹Р№ Р°СЂРіСѓРјРµРЅС‚
      */
     public double[][] transpose(double[][] matrix) throws ZeroOrderMatrixException {
         if (matrix.length == 0)
-            throw new ZeroOrderMatrixException("Транспонирование " +
-                    "матрицы нулевого порядка невозможно!");
+            throw new ZeroOrderMatrixException("РўСЂР°РЅСЃРїРѕРЅРёСЂРѕРІР°РЅРёРµ " +
+                    "РјР°С‚СЂРёС†С‹ РЅСѓР»РµРІРѕРіРѕ РїРѕСЂСЏРґРєР° РЅРµРІРѕР·РјРѕР¶РЅРѕ!");
 
         int rowsCount = matrix.length, columnsCount = matrix[0].length;
         double[][] transposedMatrix = new double[columnsCount][rowsCount];

@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="Дописан до конца метод транспонирования матрицы">
+    <list default="true" id="44ac8291-3ed4-4d44-b5ea-e64e70544ecd" name="Changes" comment="Добавлен блок try-catch для обработки основных исключений в методе main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MatrixCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MatrixCalculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,14 +85,7 @@
       <updated>1680962223609</updated>
       <workItem from="1680962225399" duration="1239000" />
       <workItem from="1681213315001" duration="18009000" />
-      <workItem from="1681292923075" duration="326000" />
-    </task>
-    <task id="LOCAL-00023" summary="Создан тест с матрицей первого порядка для метода умножения матрицы на число">
-      <created>1681218408882</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1681218408882</updated>
+      <workItem from="1681292923075" duration="2216000" />
     </task>
     <task id="LOCAL-00024" summary="Тривиальная реализация метода умножения матрицы на число дополнена результатом для теста с матрицей первого порядка. Тест multiplyMatrixFirstOrderByNumberTest выполняется успешно">
       <created>1681218509883</created>
@@ -429,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681237065991</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Добавлен блок try-catch для обработки основных исключений в методе main">
+      <created>1681293352129</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1681293352129</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,7 +448,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Добавлена обработка варианта с умножением двух матриц" />
     <MESSAGE value="Добавлена обработка варианта с нахождением определителя матрицы" />
     <MESSAGE value="Добавлена обработка варианта с транспонированием матрицы" />
     <MESSAGE value="Создан тест с матрицами порядка 5x5 для метода сложения матриц" />
@@ -472,6 +472,7 @@
     <MESSAGE value="Дописан до конца метод умножения матриц" />
     <MESSAGE value="Дописан до конца метод нахождения определителя матрицы" />
     <MESSAGE value="Дописан до конца метод транспонирования матрицы" />
-    <option name="LAST_COMMIT_MESSAGE" value="Дописан до конца метод транспонирования матрицы" />
+    <MESSAGE value="Добавлен блок try-catch для обработки основных исключений в методе main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен блок try-catch для обработки основных исключений в методе main" />
   </component>
 </project>
